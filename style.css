@@ -5,11 +5,11 @@ body {
     width: 95vw;
 }
 
-header {
+.wrapper {
     height: 95vh;
 }
 
-header .hidden-at-start {
+.hidden-at-start {
     opacity: 0;
 }
 
