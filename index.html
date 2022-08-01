@@ -21,20 +21,24 @@
     <div class="wrapper row justify-content-center align-content-center">
 
         <div class="col-auto">
-            <img id="pic" src="Multimedia/foto perfil.png" alt="Profile Picture" class="hidden-at-start rounded" height="250">
+            <img id="pic" src="Multimedia/foto perfil.png" alt="Profile Picture" class="hidden-at-start rounded img-ratio position-static"
+                height="250">
         </div>
 
         <div class="col-auto align-bottom">
-            <h1 id="name" class="hidden-at-start display-2 fst-bold mb-4 text-white">[ Rubén Sardón ]</h1>
-            <h4 id="role" class="hidden-at-start text-white"><samp>Videogame Developer – Programmer</samp></h4>
+            <h1 id="name" class="hidden-at-start display-2 fst-bold my-4 text-white text-center">[ Rubén Sardón ]</h1>
+            <h4 id="role" class="hidden-at-start text-white text-center"><samp>Videogame Developer – Programmer</samp>
+            </h4>
         </div>
 
-        <hr class="my-4">
+        <hr class="my-sm-2 my-md-4">
 
-        <div class="row justify-content-center mt-5">
-            <button id="button1" type="button" class="hidden-at-start col-auto mx-5 btn text-white fs-3 text-decoration-underline">Projects</button>
-            <button id="button2" type="button" class="hidden-at-start col-auto mx-5 btn text-white fs-3 text-decoration-underline">About Me</button>
-            <button id="button3" type="button" class="hidden-at-start col-auto mx-5 btn text-white fs-3 text-decoration-underline">CV</button>
+        <div class="row justify-content-center mt-1 mt-md-5">
+            <button id="button1" type="button"
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">Projects</button>
+            <button id="button2" type="button"
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">About
+                Me</button>
         </div>
     </div>
 
@@ -50,11 +54,10 @@
         </header>-->
     <script type="text/javascript" src="../jquery-1.10.0.min.js"></script>
     <script>
-
-        //$("#pic").hide(0, function () { $("#name").hide(0, function () { $("#role").hide(0); }); });
-        //$("#button1").hide(0, function () { $("#button2").hide(0, function () { $("#button3").hide(0); }); });
+        console.log("loaded");
 
         $(document).ready(function () {
+            console.log("ready");
 
             // Intro animation
             $("#pic").delay(100).fadeTo(1000, 1, function () {
@@ -62,16 +65,12 @@
                     $("#role").fadeTo(500, 1, function () {
                         $("#button1").delay(500).fadeTo(500, 1, function () {
                             $("#button2").fadeTo(500, 1, function () {
-                                $("#button3").fadeTo(500, 1);
+                                console.log("animation ends");
                             });
                         });
                     });
                 });
             });
-
-
-
-            console.log("ready");
         });
     </script>
     <!-- JavaScript: Bootstrap Bundle with Popper -->

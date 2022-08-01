@@ -13,6 +13,14 @@ body {
     opacity: 0;
 }
 
+.img-ratio {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
 /* Embeded videos span vertically*/
 .iframe-16-9 {
     position: relative;
