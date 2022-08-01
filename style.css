@@ -1,44 +1,19 @@
-header {
-    position: relative;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
+
+body {
     background-color: #0D0D0D;
+    height: 95vh;
+    width: 95vw;
 }
 
-header .z-0 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+header {
+    height: 95vh;
 }
 
-header .z-2 {
-    position: relative;
-    z-index: 2;
+header .hidden-at-start {
+    opacity: 0;
 }
 
-header .z-1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 1;
-}
-
-/* Youtube videos span vertically*/
+/* Embeded videos span vertically*/
 .iframe-16-9 {
     position: relative;
     padding-bottom: 56.25%;
