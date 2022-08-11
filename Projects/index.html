@@ -1,73 +1,66 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--meta name="description" content=""-->
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-        <link href="../style.css" rel="stylesheet">
-    
-        <title>My Projects</title>
-    </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body style="background-color: #0D0D0D;">
-    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+
+    <title>My Projects</title>
+</head>
+
+<body>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #202529;">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-color sticky-top">
         <!-- Navbar Collapsed Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNavAltMarkup">
             <!-- Navbar Site Mapping (left) -->
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://cumus.github.io/" style="color: #ffffff">Home</a>
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2 mx-md-0">
+                    <a class="nav-link text-white" href="https://cumus.github.io/">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://cumus.github.io/Projects/" style="color: #ffffff">Projects</a>
+                <li class="nav-item mx-2 mx-md-0">
+                    <a class="nav-link text-white" href="https://cumus.github.io/Projects/">Projects</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://cumus.github.io/About-Me/" style="color: #ffffff">About Me</a>
+                <li class="nav-item mx-2 mx-md-0">
+                    <a class="nav-link text-white" href="https://cumus.github.io/About-Me/">About Me</a>
                 </li>
             </ul>
             <!-- Navbar Quick Icons -->
-            <form class="d-flex">
-                <!-- Redeye -->
-                <a class="navbar-brand" href="https://redeye-engine.es/" style="color: #ffffff">
-                    <img src="../Multimedia/Icons/android-chrome-192x192.png" width="40" height="40"
-                        class="d-inline-block align-top" alt="Link to RedEye">
-                </a>
+            <div class="ms-2 ms-md-auto">
                 <!-- Github -->
-                <a class="navbar-brand" href="https://github.com/cumus/" style="color: #ffffff">
-                    <img src="../Multimedia/Icons/GitHub-Mark-Light-64px.png" width="40" height="40"
-                        class="d-inline-block align-top" alt="Link to Github">
+                <a class="navbar-brand" href="https://github.com/cumus/" data-toggle="tooltip" data-placement="bottom"
+                    title="View Github profile">
+                    <img src="/Multimedia/Icons/github_logo.png" width="40" height="40" alt="My Github">
                 </a>
                 <!-- LinkedIn -->
-                <a class="navbar-brand" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/"
-                    style="color: #ffffff">
-                    <img src="../Multimedia/Icons/LI-In-Bug.png" width="40" height="40" class="d-inline-block align-top"
-                        alt="Link to LinkedIn">
+                <a class="navbar-brand" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/" data-toggle="tooltip"
+                    data-placement="bottom" title="View LinkedIn profile">
+                    <img src="/Multimedia/Icons/linkedin_logo.png" width="40" height="40" alt="My LinkedIn">
                 </a>
                 <!-- Download CV -->
-                <a class="navbar-brand" href="/CV/CV_RubenSardon.pdf" style="color: #ffffff">
+                <a class="navbar-brand" href="/CV/CV_RubenSardon.pdf" data-toggle="tooltip" data-placement="bottom"
+                    title="View as pdf">
                     <button type="button" class="btn btn-primary">Download CV</button>
                 </a>
-            </form>
+            </div>
         </div>
     </nav>
 
     <main class="container-fluid">
         <!-- Latest Projects -->
-        <h1 class="display-4 fst-bold pt-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center d-block"
-            style="position: ab;">[ Latest
+        <h1 class="display-4 fst-bold pt-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center d-block">[ Latest
             Projects ]</h1>
         <div class="row flex-row justify-content-center">
 
@@ -80,15 +73,15 @@
                         <div id="carouselRedeye" class="carousel slide bg-black" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="../Multimedia/Redeye/RedEye.png" alt="RedEye Screenshot 1" height="400"
+                                    <img src="/Multimedia/Projects/Redeye/RedEye.png" alt="RedEye Screenshot 1" height="400"
                                         class="d-block w-100">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/Redeye/redeye_main2.PNG" alt="RedEye Screenshot 2" height="400"
-                                        class="d-block w-100">
+                                    <img src="/Multimedia/Projects/Redeye/redeye_main2.PNG" alt="RedEye Screenshot 2"
+                                        height="400" class="d-block w-100">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/Redeye/" alt="RedEye Screenshot 3" height="400"
+                                    <img src="/Multimedia/Projects/Redeye/" alt="RedEye Screenshot 3" height="400"
                                         class="d-block w-100">
                                 </div>
                             </div>
@@ -106,7 +99,7 @@
                         <!-- Description -->
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <img src="../Multimedia/Icons/android-chrome-192x192.png" width="40" height="40"
+                                <img src="/Multimedia/Projects/Redeye/redeye_logo.png" width="40" height="40"
                                     alt="RedEye Logo">
                                 <h3 class="mx-2 text-white d-inline">RedEye Engine</h3>
                                 <div class="row mx-auto text-muted">FEB 2018 – Ongoing</div>
@@ -127,15 +120,13 @@
                         <div class="row justify-content-evenly">
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoRedeye1">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Particle Physics</div>
                                 </a>
                             </div>
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoRedeye2">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Particle Rendering</div>
                                 </a>
                             </div>
@@ -143,7 +134,7 @@
                                 <a class="text-decoration-none" href="https://redeye-engine.es/">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <img src="../Multimedia/Icons/link-solid.svg" alt="RedEye Website"
+                                            <img src="/Multimedia/Icons/link_icon.svg" alt="RedEye Website"
                                                 height="30" />
                                             <div class="text-white-50 fs-6 my-auto ">Website</div>
                                         </div>
@@ -152,7 +143,7 @@
                             </div>
                             <div class="col-auto text-center my-1">
                                 <a class="text-decoration-none" href="https://github.com/juliamauri/RedEye-Engine">
-                                    <img src="../Multimedia/Icons/GitHub-Mark-Light-64px.png" alt="RedEye Repository"
+                                    <img src="/Multimedia/Icons/github_logo.png" alt="RedEye Repository"
                                         height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Github</div>
                                 </a>
@@ -179,15 +170,15 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="4000">
-                                    <img src="../Multimedia/Alita/Alita gif 1.gif" alt="Alita Screenshot 1" height="400"
+                                    <img src="/Multimedia/Projects/Alita/Alita gif 1.gif" alt="Alita Screenshot 1" height="400"
                                         class="d-block w-100">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="4000">
-                                    <img src="../Multimedia/Alita/Alita Screenshot 1.png" alt="Alita Screenshot 2"
+                                    <img src="/Multimedia/Projects/Alita/Alita Screenshot 1.png" alt="Alita Screenshot 2"
                                         height="400" class="d-block w-100">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="4000">
-                                    <img src="../Multimedia/Alita/Alita Screenshot 3.png" alt="Alita Screenshot 3"
+                                    <img src="/Multimedia/Projects/Alita/Alita Screenshot 3.png" alt="Alita Screenshot 3"
                                         height="400" class="d-block w-100">
                                 </div>
                             </div>
@@ -197,7 +188,7 @@
                     <div class="col-12 p-3 p-lg-4">
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <img src="../Multimedia/Alita/Jellybit_logo.png" width="40" height="40"
+                                <img src="/Multimedia/Projects/Alita/Jellybit_logo.png" width="40" height="40"
                                     alt="Jellybit Logo">
                                 <h3 class="mx-2 text-white d-inline">Alita: Unbreakable Warrior</h3>
                                 <div class="row mx-auto text-muted">JAN – JUN 2019</div>
@@ -221,8 +212,7 @@
                         <div class="row justify-content-evenly">
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoAlita">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Trailer</div>
                                 </a>
                             </div>
@@ -230,7 +220,8 @@
                                 <a class="text-decoration-none" href="https://alitaunbreakablewarrior.github.io/">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <img src="../Multimedia/Icons/link-solid.svg" alt="AUW Website" height="30" />
+                                            <img src="/Multimedia/Icons/link_icon.svg" alt="AUW Website"
+                                                height="30" />
                                             <div class="text-white-50 fs-6 my-auto">Website</div>
                                         </div>
                                     </div>
@@ -239,7 +230,7 @@
                             <div class="col-auto text-center my-1">
                                 <a class="text-decoration-none"
                                     href="https://github.com/JellyBitStudios/JellyBitEngine">
-                                    <img src="../Multimedia/Icons/GitHub-Mark-Light-64px.png" alt="AUW Engine Repository"
+                                    <img src="/Multimedia/Icons/github_logo.png" alt="AUW Engine Repository"
                                         height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Github</div>
                                 </a>
@@ -266,15 +257,15 @@
                         <div id="carouselSquareUp" class="carousel slide bg-black text-center" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="../Multimedia/Square Up/Screenshot1.png" alt="SquareUp Screenshot 1"
+                                    <img src="/Multimedia/Projects/Square Up/Screenshot1.png" alt="SquareUp Screenshot 1"
                                         height="300">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/Square Up/logo1 lit.png" alt="SquareUp Screenshot 2"
+                                    <img src="/Multimedia/Projects/Square Up/logo1 lit.png" alt="SquareUp Screenshot 2"
                                         height="300" class="w-100">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/Square Up/" alt="SquareUp Screenshot 3" height="300">
+                                    <img src="/Multimedia/Projects/Square Up/" alt="SquareUp Screenshot 3" height="300">
                                 </div>
                             </div>
                             <div class="carousel-indicators">
@@ -291,7 +282,8 @@
                     <div class="col-12 p-3 p-lg-4">
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <img src="../Multimedia/Square Up/logo.png" width="50" height="40" alt="Juicy Code Logo">
+                                <img src="/Multimedia/Projects/Square Up/logo.png" width="50" height="40"
+                                    alt="Juicy Code Logo">
                                 <h3 class="mx-2 text-white d-inline">Square Up</h3>
                                 <div class="row mx-auto text-muted">SEP – DEC 2018</div>
                             </div>
@@ -312,8 +304,7 @@
                         <div class="row justify-content-evenly mt-2">
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoSquareUp">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Trailer</div>
                                 </a>
                             </div>
@@ -321,7 +312,7 @@
                                 <a class="text-decoration-none" href="https://cumus.github.io/Juicy_Code-Square_Up/">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <img src="../Multimedia/Icons/link-solid.svg" alt="Juicy Code Website"
+                                            <img src="/Multimedia/Icons/link_icon.svg" alt="Juicy Code Website"
                                                 height="30" />
                                             <div class="text-white-50 fs-6 my-auto">Website</div>
                                         </div>
@@ -330,7 +321,7 @@
                             </div>
                             <div class="col-auto text-center my-1">
                                 <a class="text-decoration-none" href="https://github.com/cumus/Juicy_Code-Square_Up">
-                                    <img src="../Multimedia/Icons/GitHub-Mark-Light-64px.png" alt="Square Up Repository"
+                                    <img src="/Multimedia/Icons/github_logo.png" alt="Square Up Repository"
                                         height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Github</div>
                                 </a>
@@ -349,15 +340,15 @@
                         <div id="carouselUnthrone" class="carousel slide bg-black text-center" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="../Multimedia/Unthrone/Unthone Screenshot 1.png" alt="Unthrone Screenshot 1"
-                                        height="300">
+                                    <img src="/Multimedia/Projects/Unthrone/Unthone Screenshot 1.png"
+                                        alt="Unthrone Screenshot 1" height="300">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/Unthrone/Unthone Screenshot 2.png" alt="Unthrone Screenshot 2"
-                                        height="300">
+                                    <img src="/Multimedia/Projects/Unthrone/Unthone Screenshot 2.png"
+                                        alt="Unthrone Screenshot 2" height="300">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/Unthrone/Title image.PNG" alt="Unthrone Screenshot 3"
+                                    <img src="/Multimedia/Projects/Unthrone/Title image.PNG" alt="Unthrone Screenshot 3"
                                         height="300">
                                 </div>
                             </div>
@@ -375,7 +366,7 @@
                     <div class="col-12 p-3 p-lg-4">
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <img src="../Multimedia/Unthrone/logo.png" width="50" height="40" alt="Njoy Logo">
+                                <img src="/Multimedia/Projects/Unthrone/logo.png" width="50" height="40" alt="Njoy Logo">
                                 <h3 class="mx-2 text-white d-inline">Unthrone</h3>
                                 <div class="row mx-auto text-muted">JAN – JUN 2018</div>
                             </div>
@@ -399,8 +390,7 @@
                         <div class="row justify-content-evenly mt-2">
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoUnthrone">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Trailer</div>
                                 </a>
                             </div>
@@ -409,7 +399,7 @@
                                     href="https://project3citm.github.io/CulverinEngine-Project3/">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <img src="../Multimedia/Icons/link-solid.svg" alt="Njoy Games Website"
+                                            <img src="/Multimedia/Icons/link_icon.svg" alt="Njoy Games Website"
                                                 height="30" />
                                             <div class="text-white-50 fs-6 my-auto">Website</div>
                                         </div>
@@ -419,8 +409,8 @@
                             <div class="col-auto text-center my-1">
                                 <a class="text-decoration-none"
                                     href="https://github.com/Project3CITM/CulverinEngine-Project3">
-                                    <img src="../Multimedia/Icons/GitHub-Mark-Light-64px.png"
-                                        alt="Culverin Engine Repository" height="30" />
+                                    <img src="/Multimedia/Icons/github_logo.png" alt="Culverin Engine Repository"
+                                        height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Github</div>
                                 </a>
                             </div>
@@ -438,14 +428,14 @@
                         <div id="carouselALBA" class="carousel slide bg-black text-center" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="../Multimedia/ALBA/gameplay.gif" alt="ALBA Screenshot 1" height="300">
+                                    <img src="/Multimedia/Projects/ALBA/gameplay.gif" alt="ALBA Screenshot 1" height="300">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/ALBA/screenshot 1.png" alt="ALBA Screenshot 2" height="300"
+                                    <img src="/Multimedia/Projects/ALBA/screenshot 1.png" alt="ALBA Screenshot 2" height="300"
                                         class="w-100">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="../Multimedia/ALBA/title.png" alt="ALBA Screenshot 3" height="300">
+                                    <img src="/Multimedia/Projects/ALBA/title.png" alt="ALBA Screenshot 3" height="300">
                                 </div>
                             </div>
                             <div class="carousel-indicators">
@@ -462,7 +452,7 @@
                     <div class="col-12 p-3 p-lg-4">
                         <div class="row justify-content-between">
                             <div class="col-auto">
-                                <img src="../Multimedia/ALBA/logo.png" width="50" height="40" alt="Duck Dev Logo"
+                                <img src="/Multimedia/Projects/ALBA/logo.png" width="50" height="40" alt="Duck Dev Logo"
                                     class="rounded-circle">
                                 <h3 class="mx-2 text-white d-inline">A Link Between Ages</h3>
                                 <div class="row mx-auto text-muted">FEB – JUN 2017</div>
@@ -484,15 +474,13 @@
                         <div class="row justify-content-evenly mt-2">
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoALBA1">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Trailer</div>
                                 </a>
                             </div>
                             <div class="col-auto text-center my-1">
                                 <a data-bs-toggle="modal" role="button" data-bs-target="#videoALBA2">
-                                    <img src="../Multimedia/Icons/YouTube-Icon-Full-Color-Logo.wine.svg" alt="YT Icon"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/youtube_logo.svg" alt="YT Icon" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Gameplay</div>
                                 </a>
                             </div>
@@ -500,7 +488,8 @@
                                 <a class="text-decoration-none" href="https://carcasanchez.github.io/ALinkBetweenAges/">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <img src="../Multimedia/Icons/link-solid.svg" alt="Game Website" height="30" />
+                                            <img src="/Multimedia/Icons/link_icon.svg" alt="Game Website"
+                                                height="30" />
                                             <div class="text-white-50 fs-6 my-auto">Website</div>
                                         </div>
                                     </div>
@@ -508,8 +497,7 @@
                             </div>
                             <div class="col-auto text-center my-1">
                                 <a class="text-decoration-none" href="https://github.com/carcasanchez/ALinkBetweenAges">
-                                    <img src="../Multimedia/Icons/GitHub-Mark-Light-64px.png" alt="Repository"
-                                        height="30" />
+                                    <img src="/Multimedia/Icons/github_logo.png" alt="Repository" height="30" />
                                     <div class="text-white-50 fs-6 my-auto">Github</div>
                                 </a>
                             </div>
@@ -519,14 +507,11 @@
             </div>
 
             <!-- Diablo Devil Reborn -->
-
             <!-- Ausias Grand Prix -->
-
             <!-- Pinball ED -->
-
             <!-- PANG -->
 
-            
+
             <!-- Qt Model Viewer -->
             <!-- Portfolio Website -->
             <!-- SISIMEX -->
@@ -535,7 +520,7 @@
         </div>
 
         <!-- Trailer Redeye Physics-->
-        <div class="modal fade" id="videoRedeye1" tabindex="-1" aria-labelledby="video1Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoRedeye1" tabindex="-1" aria-labelledby="video1Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -565,7 +550,7 @@
         </div>
 
         <!-- Trailer Redeye Render-->
-        <div class="modal fade" id="videoRedeye2" tabindex="-1" aria-labelledby="video2Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoRedeye2" tabindex="-1" aria-labelledby="video2Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -595,7 +580,7 @@
         </div>
 
         <!-- Trailer Alita-->
-        <div class="modal fade" id="videoAlita" tabindex="-1" aria-labelledby="video3Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoAlita" tabindex="-1" aria-labelledby="video3Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -627,7 +612,7 @@
         </div>
 
         <!-- Trailer Square Up-->
-        <div class="modal fade" id="videoSquareUp" tabindex="-1" aria-labelledby="video4Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoSquareUp" tabindex="-1" aria-labelledby="video4Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -640,7 +625,7 @@
                                     data-bs-target="#videoAlita" data-bs-toggle="modal" data-bs-dismiss="modal">
                             </div>
                             <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9" align="center">
+                                <div class="embed-responsive embed-responsive-16by9">
                                     <div class="iframe-16-9">
                                         <iframe id="SquareUpTrailer" allow="picture-in-picture" allowfullscreen=""
                                             frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -659,7 +644,7 @@
         </div>
 
         <!-- Trailer Unthrone-->
-        <div class="modal fade" id="videoUnthrone" tabindex="-1" aria-labelledby="video5Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoUnthrone" tabindex="-1" aria-labelledby="video5Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -672,7 +657,7 @@
                                     data-bs-target="#videoSquareUp" data-bs-toggle="modal" data-bs-dismiss="modal">
                             </div>
                             <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9" align="center">
+                                <div class="embed-responsive embed-responsive-16by9">
                                     <div class="iframe-16-9">
                                         <iframe id="UnthoneTrailer" allow="picture-in-picture" allowfullscreen=""
                                             frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -690,7 +675,7 @@
         </div>
 
         <!-- Trailer ALBA 1-->
-        <div class="modal fade" id="videoALBA1" tabindex="-1" aria-labelledby="video6Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoALBA1" tabindex="-1" aria-labelledby="video6Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -703,7 +688,7 @@
                                     data-bs-target="#videoUnthrone" data-bs-toggle="modal" data-bs-dismiss="modal">
                             </div>
                             <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9" align="center">
+                                <div class="embed-responsive embed-responsive-16by9">
                                     <div class="iframe-16-9">
                                         <iframe id="ALBA1Trailer" allow="picture-in-picture" allowfullscreen=""
                                             frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
@@ -721,7 +706,7 @@
         </div>
 
         <!-- Trailer ALBA 2-->
-        <div class="modal fade" id="videoALBA2" tabindex="-1" aria-labelledby="video7Label" style="display: none;"
+        <div class="modal fade modal-hidden" id="videoALBA2" tabindex="-1" aria-labelledby="video7Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
                 <div class="modal-content border-secondary bg-dark">
@@ -734,7 +719,7 @@
                                     data-bs-target="#videoALBA1" data-bs-toggle="modal" data-bs-dismiss="modal">
                             </div>
                             <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9" align="center">
+                                <div class="embed-responsive embed-responsive-16by9">
                                     <div class="iframe-16-9">
                                         <iframe id="ALBA2Trailer" allow="picture-in-picture" allowfullscreen=""
                                             frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>

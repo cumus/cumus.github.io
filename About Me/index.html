@@ -10,19 +10,321 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <link href="style.css" rel="stylesheet">
 
-        
-
-    <title>Hello, wuuuuorld!</title>
+    <title>About Me</title>
 </head>
 
 <body>
-    
 
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-color sticky-top">
+        <!-- Navbar Collapsed Button -->
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNavAltMarkup">
+            <!-- Navbar Site Mapping (left) -->
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2 mx-md-0">
+                    <a class="nav-link text-white" href="https://cumus.github.io/">Home</a>
+                </li>
+                <li class="nav-item mx-2 mx-md-0">
+                    <a class="nav-link text-white" href="https://cumus.github.io/Projects/">Projects</a>
+                </li>
+                <li class="nav-item mx-2 mx-md-0">
+                    <a class="nav-link text-white" href="https://cumus.github.io/About-Me/">About Me</a>
+                </li>
+            </ul>
+            <!-- Navbar Quick Icons -->
+            <div class="ms-2 ms-md-auto">
+                <!-- Github -->
+                <a class="navbar-brand" href="https://github.com/cumus/" data-toggle="tooltip" data-placement="bottom"
+                    title="View Github profile">
+                    <img src="../Multimedia/Icons/github_logo.png" width="40" height="40" alt="My Github">
+                </a>
+                <!-- LinkedIn -->
+                <a class="navbar-brand" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/" data-toggle="tooltip"
+                    data-placement="bottom" title="View LinkedIn profile">
+                    <img src="../Multimedia/Icons/linkedin_logo.png" width="40" height="40" alt="My LinkedIn">
+                </a>
+                <!-- Download CV -->
+                <a class="navbar-brand" href="/CV/CV_RubenSardon.pdf" data-toggle="tooltip" data-placement="bottom"
+                    title="View as pdf">
+                    <button type="button" class="btn btn-primary">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+
+        <!-- Me -->
+        <div class="row align-items-center my-5">
+            <div class="col-12 col-md-4">
+                <h1 class="display-1 fst-bold text-center text-white">[ Me ]</h1>
+            </div>
+            <div class="col-12 col-md-8 text-white">
+                <p>Programmer</p>
+
+
+
+                <p>LANGUAGES</p>
+                <p>- SPANISH ENGLISH CATALAN</p>
+
+
+                <p>HOBBIES</p>
+                <p>Ski, D&D</p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Education -->
+        <div class="row align-items-center my-5">
+            <div class="col-12 col-md-4 ">
+                <h1 class="display-3 fst-bold text-center text-white">[ Education ]</h1>
+            </div>
+            <div class="col-12 col-md-8 text-white font-monospace">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-auto text-center">
+                        <img src="../Multimedia/Softwares/UPC.png" class="col-auto text-center m-3" alt="UPC"
+                            height="200">
+                    </div>
+                    <div class="col-auto justify-content-center my-3">
+                        <h2 class="mb-4">Videogame Design & Development Degree</h2>
+                        <p>Centre de Ia Imatge i la Tecnologia Multimèdia (CITM) - UPC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!--h1 class="display-3 fst-bold text-center text-white w-100">[ Education ]</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-auto text-center">
+                <img src="../Multimedia/Softwares/UPC.png" class="col-auto text-center m-3" alt="UPC" height="200">
+            </div>
+            <div class="col-auto my-auto text-white">
+                <h2 class="mb-4">Videogame Design & Development Degree</h2>
+                <p>Centre de Ia Imatge i la Tecnologia Multimèdia (CITM) - UPC</p>
+            </div>
+        </div>
+        <hr-->
+
+        <!-- Skills -->
+        <h1 class="display-3 fst-bold text-center text-white w-100">[ Technical Skills ]</h1>
+        <div class="row justify-content-evenly p-3 font-monospace">
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Programming Languages </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/c++.svg" alt="C++">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/c.svg" alt="C">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/c_sharp.svg" alt="C#">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/Python.svg" alt="Python">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/javascript.svg" alt="JavaScript">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Engines </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/Unity.png" alt="Unity">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/Unreal.png" alt="Unreal">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Projects/Redeye/redeye_logo.png"
+                        alt="RedEye">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Git </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/GitHub.png" alt="Github">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/bitbucket-logo.png"
+                        alt="Bitbucket">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Data Analysis </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/tableau.png" alt="Tableau">
+                    <img class="col-auto m-2" height="70" src="/Multimedia/Softwares/Sql.png" alt="SQL">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/Excel.png" alt="Excel">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Management </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="30" src="/Multimedia/Softwares/hacknplan.svg" alt="Hacknplan">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/Trello-Logo.png" alt="Trello">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> 2D </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/photoshop.svg" alt="Photoshop">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/paint.png" alt="Paint">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> 3D </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="90" src="/Multimedia/Softwares/maya.svg" alt="Maya">
+                    <img class="col-auto m-2" height="30" src="/Multimedia/Softwares/Houdini.png" alt="Houdini">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Web </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/html.svg" alt="HTML">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/css-3.svg" alt="CSS">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/bootstrap-4.svg" alt="Bootstrap">
+                    <img class="col-auto m-2" height="40" src="/Multimedia/Softwares/jquery.svg" alt="jQuery">
+                    <img class="col-auto m-2" height="65" src="/Multimedia/Softwares/webgl.png" alt="WebGL">
+                </div>
+            </div>
+
+            <div class="col-auto card skill-bg m-3">
+                <h3 class="card-header text-white"> Software/Libraries </h3>
+                <div class="card-body row align-items-center justify-content-around">
+                    <img class="col-auto m-2" height="70" src="/Multimedia/Softwares/sdl.svg" alt="SDL">
+                    <img class="col-auto m-2" height="60" src="/Multimedia/Softwares/opengl.svg" alt="OpenGL">
+                    <img class="col-auto m-2" height="75" src="/Multimedia/Softwares/qt.svg" alt="Qt">
+                    <img class="col-auto m-2" height="80" src="/Multimedia/Softwares/imgui_arty.png" alt="ImGui">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/wwise_white.png" alt="WWise">
+                    <img class="col-auto m-2" height="80" src="/Multimedia/Softwares/DevIL.png"
+                        alt="DevIL http://openil.sourceforge.net/">
+                    <img class="col-auto m-2" height="140" src="/Multimedia/Softwares/bullet.png" alt="Bullet">
+                    <img class="col-auto m-2" height="50" src="/Multimedia/Softwares/Box2d.png" alt="Box2D">
+                    <img class="col-auto m-2" height="50" src="/Multimedia/Softwares/brofiler.png"
+                        alt="Optick https://www.optickprofiler.com/">
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <!--div class="row my-5">
+            <div class="col-12 col-md-4">
+                <h1 class="display-3 fst-bold text-center text-white">[ Technical Skills ]</h1>
+            </div>
+            <div class="col-12 col-md-8 text-white">
+
+                <div class="row align-items-center mb-3">
+                    <p class="col-auto">Programming Languages:</p>
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/c++.svg" alt="C++">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/c.svg" alt="C">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/c_sharp.svg" alt="C#">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/Python.svg" alt="Python">
+                    <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/javascript.svg" alt="JavaScript">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-auto">Engines:</p>
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/Unity.png" alt="Unity">
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/Unreal.png" alt="Unreal">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-auto">Software/Libraries:</p>
+                    <img class="col-auto" height="70" src="/Multimedia/Softwares/sdl.svg" alt="SDL">
+                    <img class="col-auto" height="60" src="/Multimedia/Softwares/opengl.svg" alt="OpenGL">
+                    <img class="col-auto" height="75" src="/Multimedia/Softwares/qt.svg" alt="Qt">
+                    <img class="col-auto" height="80" src="/Multimedia/Softwares/imgui_arty.png" alt="ImGui">
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/wwise_white.png" alt="WWise">
+                    <img class="col-auto" height="50" src="/Multimedia/Softwares/brofiler.png"
+                        alt="Optick https://www.optickprofiler.com/">
+                    <img class="col-auto" height="80" src="/Multimedia/Softwares/DevIL.png"
+                        alt="DevIL http://openil.sourceforge.net/">
+                    <img class="col-auto" height="140" src="/Multimedia/Softwares/bullet.png" alt="Bullet">
+                    <img class="col-auto" height="50" src="/Multimedia/Softwares/Box2d.png" alt="Box2D">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-auto">Web:</p>
+                    <img class="col-auto" height="60" src="/Multimedia/Softwares/Sql.png" alt="SQL">
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/html.svg" alt="HTML">
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/css-3.svg" alt="CSS">
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/bootstrap-4.svg" alt="Bootstrap">
+                    <img class="col-auto" height="40" src="/Multimedia/Softwares/jquery.svg" alt="jQuery">
+                    <img class="col-auto" height="65" src="/Multimedia/Softwares/webgl.png" alt="WebGL">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-12">2D:</p>
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/photoshop.svg" alt="Photoshop">
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/paint.png" alt="Paint">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-12">3D:</p>
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/maya.svg" alt="Maya">
+                    <img class="col-auto" height="30" src="/Multimedia/Softwares/Houdini.png" alt="Houdini">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-12">Management:</p>
+                    <img class="col-auto" height="30" src="/Multimedia/Softwares/hacknplan.svg" alt="Hacknplan">
+                    <img class="col-auto" height="50" src="/Multimedia/Softwares/trello.svg" alt="Trello">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-12">Git:</p>
+                    <img class="col-auto" height="100" src="/Multimedia/Icons/github_logo.png" alt="Github">
+                    <img class="col-auto" height="30" src="/Multimedia/Softwares/bitbucket.svg" alt="Bitbucket">
+                </div>
+                <div class="row align-items-center mb-3">
+                    <p class="col-12">Data Analysis:</p>
+                    <img class="col-auto" height="100" src="/Multimedia/Softwares/Excel.png" alt="Excel">
+                    <img class="col-auto" height="30" src="/Multimedia/Softwares/tableau.svg" alt="Tableau">
+                </div>
+
+
+
+
+                <p>Languages: C++, C#, C, Python, JavaScript</p>
+                <p>Web: SQL, HTML, CSS, Bootstrap, jQuery</p>
+                <p>Libraries: OpenGL, SDL, WWise, Qt, ImGui, PhysFS, Optick, DevIL, Bullet, Box2D</p>
+                <p>Engines: Unity, Unreal</p>
+                <p>2D: Photoshop, Paint</p>
+                <p>3D: Maya, Houdini</p>
+                <p>Management: Hacknplan, Trello</p>
+                <p>Git: Github, Bitbucket</p>
+                <p>Data Analysis: Tableau, Excel</p>
+
+
+                <p>Communications: Discord</p>
+                <p>Code Editor: Visual Studio, Visual Studio Code</p>
+                <p>Audio: Audacity, Wwise</p>
+            </div>
+        </div-->
+
+        <!-- Contact -->
+        <div class="row align-items-center my-5">
+            <div class="col-12 col-md-4 ">
+                <h1 class="display-2 fst-bold text-center text-white">[ Contact ]</h1>
+            </div>
+            <div class="col-12 col-md-8 text-white">
+                <div class="row justify-content-evenly my-4">
+                    <div class="col-auto">
+                        <p>rgsardon@gmail.com</p>
+                        <p>+34 622 617 223</p>
+                        <p>Barcelona, Spain</p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row justify-content-evenly">
+                            <img class="col-auto m-2" height="100" src="/Multimedia/Icons/Discord.svg" alt="Discord +++++++++ https://discord.gg/HyhdcJMWJ3">
+                            <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/GitHub.png" alt="Github">
+                            <img class="col-auto m-2" height="100" src="/Multimedia/Icons/linkedin_logo.png" alt="LinkedIn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
+<!-- JavaScript: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>

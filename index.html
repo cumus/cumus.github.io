@@ -11,72 +11,81 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Local CSS -->
     <link href="style.css" rel="stylesheet">
 
     <title>Rubén Sardón</title>
 </head>
 
 <body>
-    <!-- Cover -->
-    <div class="wrapper row justify-content-center align-content-center">
 
-        <div class="col-auto">
-            <img id="pic" src="Multimedia/foto perfil.png" alt="Profile Picture" class="hidden-at-start rounded img-ratio position-static"
-                height="250">
-        </div>
-
-        <div class="col-auto align-bottom">
-            <h1 id="name" class="hidden-at-start display-2 fst-bold my-4 text-white text-center">[ Rubén Sardón ]</h1>
-            <h4 id="role" class="hidden-at-start text-white text-center"><samp>Videogame Developer – Programmer</samp>
-            </h4>
-        </div>
-
-        <hr class="my-sm-2 my-md-4">
-
-        <div class="row justify-content-center mt-1 mt-md-5">
-            <button id="button1" type="button"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">Projects</button>
-            <button id="button2" type="button"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">About
-                Me</button>
+    <!-- Networking -->
+    <div class="d-block sticky-top mt-1 m-md-2 m-0 me-lg-3">
+        <div class="row justify-content-center justify-content-lg-end ">
+            <!-- Github -->
+            <a id="Github" href="https://github.com/cumus/" class="hidden-at-start col-auto btn" data-toggle="tooltip"
+                data-placement="bottom" title="View Github profile">
+                <img src="Multimedia/Icons/github_logo.png" width="40" height="40" alt="My Github">
+            </a>
+            <!-- LinkedIn -->
+            <a id="LinkedIn" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/"
+                class="hidden-at-start col-auto btn" data-toggle="tooltip" data-placement="bottom"
+                title="View LinkedIn profile">
+                <img src="Multimedia/Icons/linkedin_logo.png" width="40" height="40" alt="My LinkedIn">
+            </a>
+            <!-- Download CV -->
+            <a id="CV" href="/CV/CV_RubenSardon.pdf" class="hidden-at-start col-auto btn me-3" data-toggle="tooltip"
+                data-placement="bottom" title="View as pdf">
+                <button type="button" class="btn btn-primary">Download CV</button>
+            </a>
         </div>
     </div>
 
-    <!-- Cover --
-        <header class="row overflow-hidden justify-content-center">
-            <div class="col-auto">
-                <img id="pic" src="Multimedia/foto perfil.png" alt="Profile Picture" class="rounded">
-            </div>
-            <div class="col-auto">
-                <h1 id="name" class="display-2 fst-bold mb-4 text-white">[ Rubén Sardón ]</h1>
-                <h4 id="role" class="text-white"><samp>Videogame Developer – Programmer</samp></h4>
-            </div>
-        </header>-->
-    <script type="text/javascript" src="../jquery-1.10.0.min.js"></script>
-    <script>
-        console.log("loaded");
+    <!-- Base -->
+    <main class="screen-wrapper row justify-content-center align-content-center">
+        <!-- Picture -->
+        <div class="col-auto">
+            <img id="pic" src="Multimedia/foto perfil.png" alt="Profile Picture"
+                class="hidden-at-start position-static rounded img-ratio">
+        </div>
+        <!-- Headline -->
+        <div class="col-auto align-bottom mb-sm-3">
+            <h1 id="name" class="hidden-at-start display-2 fst-bold my-4 text-white text-center">[ Rubén Sardón ]</h1>
+            <h4 id="role" class="hidden-at-start text-white text-center"><samp>Videogame Developer & Programmer</samp>
+            </h4>
+        </div>
+        <!-- Go to -->
+        <hr id="separator" class="hidden-at-start my-3 my-md-4">
+        <div class="row justify-content-center">
+            <a id="Projects" href="https://cumus.github.io/Projects/"
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">Projects</a>
+            <a id="About-Me" href="https://cumus.github.io/About-Me/"
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">About Me</a>
+        </div>
+    </main>
+</body>
 
-        $(document).ready(function () {
-            console.log("ready");
+<!-- JQuery -->
+<script type="text/javascript" src="../jquery-1.10.0.min.js"></script>
 
-            // Intro animation
-            $("#pic").delay(100).fadeTo(1000, 1, function () {
-                $("#name").fadeTo(500, 1, function () {
-                    $("#role").fadeTo(500, 1, function () {
-                        $("#button1").delay(500).fadeTo(500, 1, function () {
-                            $("#button2").fadeTo(500, 1, function () {
-                                console.log("animation ends");
-                            });
+<!-- Intro animation -->
+<script>
+    $(document).ready(function () { // 100 + 2200 + 1400 = 3700ms
+        $("#pic").delay(100).fadeTo(1200, 1, function () {
+            $("#name").fadeTo(500, 1, function () {
+                $("#role").fadeTo(500, 1, function () {
+                    $("#separator").fadeTo(1400, 1);
+                    $("#Projects").delay(200).fadeTo(400, 1, function () {
+                        $("#About-Me").fadeTo(400, 1, function () {
+                            $("#Github").fadeTo(300, 1);
+                            $("#LinkedIn").fadeTo(350, 1);
+                            $("#CV").fadeTo(400, 1);
                         });
                     });
                 });
             });
         });
-    </script>
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
+    });
+</script>
 
 </html>

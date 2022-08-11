@@ -1,12 +1,11 @@
-
 body {
     background-color: #0D0D0D;
-    height: 95vh;
-    width: 95vw;
+    height: 90vh;
+    width: 98vw;
 }
 
-.wrapper {
-    height: 95vh;
+.screen-wrapper {
+    height: 90vh;
 }
 
 .hidden-at-start {
@@ -19,22 +18,4 @@ body {
     max-height: 100%;
     width: auto;
     height: auto;
-}
-
-/* Embeded videos span vertically*/
-.iframe-16-9 {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
-    width: 100%;
-}
-
-.iframe-16-9 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
