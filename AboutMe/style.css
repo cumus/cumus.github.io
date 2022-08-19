@@ -9,3 +9,11 @@ body {
 .skill-bg {
     background-color: #646464;
 }
+
+.toggle-hidden-at-start {
+    display: none;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
