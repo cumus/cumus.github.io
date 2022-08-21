@@ -17,8 +17,7 @@
     <title>Rubén Sardón</title>
 </head>
 
-<body>
-
+<body class="page-adjust">
     <!-- Networking -->
     <div class="d-block sticky-top mt-1 m-md-2 m-0 me-lg-3">
         <div class="row justify-content-center justify-content-lg-end ">
@@ -31,7 +30,7 @@
             <a id="LinkedIn" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/"
                 class="hidden-at-start col-auto btn" data-toggle="tooltip" data-placement="bottom"
                 title="View LinkedIn profile">
-                <img src="Multimedia/Icons/linkedin_logo.png" width="40" height="40" alt="My LinkedIn">
+                <img src="Multimedia/Icons/linkedin.svg" width="40" height="40" alt="My LinkedIn">
             </a>
             <!-- Download CV -->
             <a id="CV" href="/CV/CV_RubenSardon.pdf" class="hidden-at-start col-auto btn me-3" data-toggle="tooltip"
@@ -58,9 +57,11 @@
         <hr id="separator" class="hidden-at-start my-3 my-md-4">
         <div class="row justify-content-center">
             <a id="Projects" href="https://cumus.github.io/Projects/"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">Projects</a>
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-none text-primary">Projects</a>
             <a id="About-Me" href="https://cumus.github.io/AboutMe/"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-underline text-primary">About Me</a>
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-none text-primary">About Me</a>
+            <a id="Contact" href="https://cumus.github.io/Contact/"
+                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-none text-primary">Contact</a>
         </div>
     </main>
 </body>
@@ -70,16 +71,18 @@
 
 <!-- Intro animation -->
 <script>
-    $(document).ready(function () { // 100 + 2200 + 1400 = 3700ms
+    $(document).ready(function () { // 100 + 2200 + 1500 = 3800ms
         $("#pic").delay(100).fadeTo(1200, 1, function () {
             $("#name").fadeTo(500, 1, function () {
                 $("#role").fadeTo(500, 1, function () {
                     $("#separator").fadeTo(1400, 1);
-                    $("#Projects").delay(200).fadeTo(400, 1, function () {
-                        $("#About-Me").fadeTo(400, 1, function () {
-                            $("#Github").fadeTo(300, 1);
-                            $("#LinkedIn").fadeTo(350, 1);
-                            $("#CV").fadeTo(400, 1);
+                    $("#Projects").delay(200).fadeTo(300, 1, function () {
+                        $("#About-Me").fadeTo(300, 1, function () {
+                            $("#Contact").fadeTo(300, 1, function () {
+                                $("#Github").fadeTo(300, 1);
+                                $("#LinkedIn").fadeTo(350, 1);
+                                $("#CV").fadeTo(400, 1);
+                            });
                         });
                     });
                 });
