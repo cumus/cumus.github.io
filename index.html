@@ -9,7 +9,7 @@
 
     <!-- CSS -->
     <link href="bootstrap.min.css" rel="stylesheet" defer>
-    <link href="intro_style.css" rel="stylesheet" defer>
+    <link href="style.css" rel="stylesheet" defer>
 
     <!-- JQuery & Intro animation -->
     <script type="text/javascript" src="jquery-1.10.0.min.js" defer></script>
@@ -18,54 +18,55 @@
     <title>Rubén Sardón</title>
 </head>
 
-<body class="container-fuild" style="background-color: #0D0D0D">
+<body class="container-fuild">
 
     <div class="sticky-top m-0 mt-1 m-md-2 me-lg-3">
         <div class="row justify-content-center justify-content-lg-end w-100">
             <!-- Github -->
-            <a id="Github" href="https://github.com/cumus/" class="hidden-at-start col-auto btn" data-toggle="tooltip"
-                data-placement="bottom" title="View Github profile">
+            <a id="Github" href="https://github.com/cumus/" class="col-auto btn invisible-at-start"
+                data-toggle="tooltip" data-placement="bottom" title="View Github profile">
                 <img src="Multimedia/Networks/github.webp" width="40" height="40" alt="My Github">
             </a>
             <!-- LinkedIn -->
             <a id="LinkedIn" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/"
-                class="hidden-at-start col-auto btn" data-toggle="tooltip" data-placement="bottom"
+                class="col-auto btn invisible-at-start" data-toggle="tooltip" data-placement="bottom"
                 title="View LinkedIn profile">
                 <img src="Multimedia/Networks/linkedin.svg" width="40" height="40" alt="My LinkedIn">
             </a>
             <!-- Download CV -->
-            <a id="CV" href="/CV/CV_RubenSardon.pdf" class="hidden-at-start col-auto btn me-3" data-toggle="tooltip"
+            <a id="CV" href="/CV/CV_RubenSardon.pdf" class="col-auto btn me-3 invisible-at-start" data-toggle="tooltip"
                 data-placement="bottom" title="View as pdf">
                 <button type="button" class="btn btn-primary">Download CV</button>
             </a>
         </div>
     </div>
 
-
     <main class="screen-wrapper row justify-content-center align-content-center mx-auto">
         <!-- Picture -->
         <div class="col-auto">
             <img id="pic" src="Multimedia/profile.webp" alt="Profile Picture"
-                class="hidden-at-start position-static rounded">
+                class="position-static rounded invisible-at-start">
         </div>
         <!-- Headline -->
         <div class="col-auto align-bottom mb-sm-3">
-            <h1 id="name" class="hidden-at-start display-2 fst-bold my-4 text-white text-center">[ Rubén Sardón ]</h1>
-            <h4 id="role" class="hidden-at-start text-white text-center"><samp>Videogame Developer & Programmer</samp>
+            <h1 id="name" class="display-2 fst-bold my-4 text-white text-center invisible-at-start">[ Rubén Sardón ]
+            </h1>
+            <h4 id="role" class="text-white text-center invisible-at-start"><samp>Videogame Developer &
+                    Programmer</samp>
             </h4>
         </div>
         <!-- Go to -->
         <div class="my-3 my-md-4 px-4">
-            <hr id="separator" class="hidden-at-start">
+            <hr id="separator" class="invisible-at-start">
         </div>
 
         <div class="row justify-content-center">
             <a id="Projects" href="https://cumus.github.io/Projects/"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-none text-primary">Projects</a>
+                class="col-auto mx-5 btn fs-3 text-decoration-none text-primary invisible-at-start">Projects</a>
             <a id="About-Me" href="https://cumus.github.io/AboutMe/"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-none text-primary">About Me</a>
+                class="col-auto mx-5 btn fs-3 text-decoration-none text-primary invisible-at-start">About Me</a>
             <a id="Contact" href="https://cumus.github.io/Contact/"
-                class="hidden-at-start col-auto mx-5 btn fs-3 text-decoration-none text-primary">Contact</a>
+                class="col-auto mx-5 btn fs-3 text-decoration-none text-primary invisible-at-start">Contact</a>
         </div>
     </main>
 </body>
