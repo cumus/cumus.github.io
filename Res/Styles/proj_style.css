@@ -1,3 +1,11 @@
+/* Body & Nav */
+body {
+    background-color: #0D0D0D
+}
+
+.navbar {
+    background-color: #202529
+}
 
 /* Hidden modals*/
 .start-hidden{
