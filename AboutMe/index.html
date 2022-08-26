@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/bootstrap.min.css" defer>
+    <link rel="stylesheet" href="/Source/Bootstrap/bootstrap.min.css" defer>
     <link rel="stylesheet" href="/style.css" defer>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script type="text/javascript" src="/bootstrap.bundle.min.js" defer></script>
+    <script type="text/javascript" src="/Source/Bootstrap/bootstrap.bundle.min.js" defer></script>
 
     <!-- JQuery & Collapsing Cards -->
-    <script type="text/javascript" src="/jquery-1.10.0.min.js" defer></script>
-    <script type="text/javascript" src="collapsing_cards.js" defer></script>
+    <script type="text/javascript" src="/Source/jQuery/jquery-1.10.0.min.js" defer></script>
+    <script type="text/javascript" src="/Source/collapsing_cards.js" defer></script>
 
     <title>About Me</title>
 </head>
@@ -71,8 +71,7 @@
         <h1 class="display-3 fst-bold text-center text-white w-100 mt-4">[ About Me ]</h1>
         <div class="row my-3">
             <div class="col-12 col-md-3 col-lg-2 text-center">
-                <img src="/Multimedia/profile.webp" alt="Profile Picture" class="rounded m-3" width="170"
-                    height="170">
+                <img src="/Multimedia/profile.webp" alt="Profile Picture" class="rounded m-3" width="170" height="170">
             </div>
             <div class="col-auto col-md-8 col-lg-9 m-auto h-100 text-white fs-5">
                 <p>Hi. I'm Rubén Sardón, an adept problem solver craving for a spot in the video game industry. I'm a
@@ -244,8 +243,9 @@
         <!-- Personal Interests -->
         <h1 class="display-3 fst-bold text-white text-center mt-4">[ Personal Interests ]</h1>
         <div class="row justify-content-center text-white">
+
             <!-- Hobbies -->
-            <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 col-xxl-4">
+            <div class="col-12 col-lg-6">
                 <div id="box-2" class="card bg-dark m-3">
                     <h2 class="card-header font-monospace fw-bold text-center">Hobbies</h2>
                     <div class="card-body text-center">
@@ -257,19 +257,32 @@
                         <img src="/Multimedia/Icons/keyboard-down-arrow.svg" id="box-icon-2" height="40" width="40"
                             class="float-end">
                     </div>
-                    <div id="box-text-2" class="px-4 mb-2 hidden-at-start">
-                        In college, I studied the entire process behind building a
-                        video game. I learned to design, plan, program, test, analyze, monetize and publish
-                        games; complemented with an acute understanding of distinct fields such as audio,
-                        physics, accessibility, user experience and player psychology. However, the most
-                        valuable lesson remains that in this industry knowledge alone cannot thrive without
-                        proper teamwork and communication.
+                    <div id="box-text-2" class="card-footer px-4 mb-2 hidden-at-start">
+                        <h4 class="text-center">Ski</h4>
+                        <p>Skiing might seem frightening at first glance; but, once you get comfortable with the basics,
+                            you can ski down any slope. Gear up and satiate yourself with adrenaline whilst enjoying the
+                            landmarks and its clean air.</p>
+                        <hr>
+                        <h4 class="text-center">Rugby</h4>
+                        <p>Nothing better than rugby to really learn the meaning of sportsmanship and teamwork. It's all
+                            about managing as a team to coordinate and push together to move the ball forward. Being a
+                            contact sport, your companions depend on your own skills to protect yourself during the
+                            rough and tumble and vice versa. The camaraderie not only affects your team, but the other
+                            teams as well as there is a third part in a match where we all feast together and get to
+                            know each other. In my opinion, the best sport ever.</p>
+                        <hr>
+                        <h4 class="text-center">Dungeons & Dragons</h4>
+                        <p>I recently got involved with the wonders of roleplaying. After reading the huge manuals,
+                            understanding character creation and practicing combat mechanics, your GM can send your
+                            adventuring group into a campaign with an endless stream of content. Half of the decisions
+                            made are following the guidelines and the rest is free for the players to interact in any
+                            way possible.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Most Influential Games -->
-            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7">
+            <div class="col-12 col-lg-6">
                 <div id="box-3" class="card bg-dark m-3 ">
                     <h2 class="card-header font-monospace fw-bold text-center">Most Influential Games</h2>
                     <div class="card-body row align-items-center justify-content-center">
@@ -290,43 +303,49 @@
                         <img src="/Multimedia/Icons/keyboard-down-arrow.svg" id="box-icon-3" height="40" width="40"
                             class="float-end">
                     </div>
-                    <div id="box-text-3" class="px-4 mb-2 hidden-at-start">
-                        In college, I studied the entire process behind building a
-                        video game. I learned to design, plan, program, test, analyze, monetize and publish
-                        games; complemented with an acute understanding of distinct fields such as audio,
-                        physics, accessibility, user experience and player psychology. However, the most
-                        valuable lesson remains that in this industry knowledge alone cannot thrive without
-                        proper teamwork and communication.
+                    <div id="box-text-3" class="card-footer px-4 mb-2 hidden-at-start">
+
+                        <h4 class="text-center">Halo</h4>
+                        <p>My first console was an Xbox in 2001 and it came with Halo. It's a fantasy FPS set in space
+                            where you play as Master Chief fighting aliens. The game and its sequels have evolved into a
+                            successful grand franchise. The combat, the driving, the storytelling and the environment
+                            setup are what makes it have a fond place in my heart. Halo 3 is the game I have played
+                            most. I made a mayor time investment into its multiplayer arena.</p>
+                        <hr>
+                        <h4 class="text-center">Path of Exile</h4>
+                        <p>POE has a critical moment at the beginning of the experience where most players instantly
+                            decide to stop playing. The moment you gaze upon the inhumanly complex skill tree you are
+                            faced with the challenge of understanding and progressing the different branches. Together
+                            with the arsenal of items and skills, inventory management and variety of mechanics, the
+                            game becomes a competition to optimize your character set. The game resets every couple of
+                            months with added content which gives it endless replayability. </p>
+                        <hr>
+                        <h4 class="text-center">Satisfactory</h4>
+                        <p>Satisfactory is perfect. You start in a hostile land empty-handed and end up producing
+                            massive systems to industrialize and power your settlement. I'm obsessed with optimization
+                            and this game lets you tickle that part of your brain that tells you that something can be
+                            improved. It's similar to Minecraft if it was solely centered around redstone automation;
+                            which clearly is the way I prefer to play.</p>
                     </div>
                 </div>
             </div>
         </div>
         <hr>
 
-        <!-- Contact ->
-        <div class="row align-items-center my-5">
-            <div class="col-12 col-md-4 ">
-                <h1 class="display-2 fst-bold text-center text-white">[ Contact ]</h1>
-            </div>
-            <div class="col-12 col-md-8 text-white">
-                <div class="row justify-content-evenly my-4">
-                    <div class="col-auto">
-                        <p>rgsardon@gmail.com</p>
-                        <p>+34 622 617 223</p>
-                        <p>Barcelona, Spain</p>
-                    </div>
-                    <div class="col-auto">
-                        <div class="row justify-content-evenly">
-                            <img class="col-auto m-2" height="100" src="/Multimedia/Icons/Discord.svg"
-                                alt="Discord +++++++++ https://discord.gg/HyhdcJMWJ3">
-                            <img class="col-auto m-2" height="100" src="/Multimedia/Softwares/GitHub.png" alt="Github">
-                            <img class="col-auto m-2" height="100" src="/Multimedia/Icons/linkedin_logo.png"
-                                alt="LinkedIn">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div-->
+        <!-- Contact -->
+        <div class="row align-items-center justify-content-center text-white my-5">
+            <a href="https://github.com/cumus/" class="text-decoration-none col-auto">
+                <img class="m-4" width="50" height="50" src="/Multimedia/Networks/github.webp" alt="Github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/" class="col-auto">
+                <img class="m-4" width="50" height="50" src="/Multimedia/Networks/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="mailto: rgsardon@gmail.com" class="text-decoration-none col-auto">
+                <img class="m-4" width="50" height="50" src="/Multimedia/Icons/envelope.svg" alt="Email">
+            </a>
+        </div>
     </main>
 </body>
 

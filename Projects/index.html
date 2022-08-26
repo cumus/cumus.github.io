@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/bootstrap.min.css" defer>
+    <link rel="stylesheet" href="/Source/Bootstrap/bootstrap.min.css" defer>
     <link rel="stylesheet" href="/style.css" defer>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script type="text/javascript" src="/bootstrap.bundle.min.js" defer></script>
+    <script type="text/javascript" src="/Source/Bootstrap/bootstrap.bundle.min.js" defer></script>
 
     <!-- JQuery & Improved Modals -->
-    <script type="text/javascript" src="/jquery-1.10.0.min.js" defer></script>
-    <script type="text/javascript" src="optimized_modals.js" defer></script>
+    <script type="text/javascript" src="/Source/jQuery/jquery-1.10.0.min.js" defer></script>
+    <script type="text/javascript" src="/Source/optimized_modals.js" defer></script>
 
     <title>My Projects</title>
 </head>
@@ -526,224 +526,239 @@
 
         </div>
 
-        <!-- Trailer Redeye Physics-->
-        <div class="modal fade hidden-at-start" id="videoRedeye1" tabindex="-1" aria-labelledby="video1Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoALBA2" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9 text-center">
-                                    <div class="iframe-16-9 mx-auto">
-                                        <iframe id="RedEyePhysics" allow="autoplay"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoRedeye2" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Contact -->
+        <div class="row align-items-center justify-content-center text-white my-5">
+            <a href="https://github.com/cumus/" class="text-decoration-none col-auto">
+                <img class="m-4" width="50" height="50" src="/Multimedia/Networks/github.webp" alt="Github">
+            </a>
 
-        <!-- Trailer Redeye Render-->
-        <div class="modal fade hidden-at-start" id="videoRedeye2" tabindex="-1" aria-labelledby="video2Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoRedeye1" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9 text-center">
-                                    <div class="iframe-16-9 mx-auto">
-                                        <iframe id="RedEyeRender" allow="autoplay"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoAlita" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <a href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/" class="col-auto">
+                <img class="m-4" width="50" height="50" src="/Multimedia/Networks/linkedin.svg" alt="LinkedIn">
+            </a>
 
-        <!-- Trailer Alita-->
-        <div class="modal fade hidden-at-start" id="videoAlita" tabindex="-1" aria-labelledby="video3Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoRedeye2" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <div class="iframe-16-9 mx-auto">
-                                        <iframe id="AlitaTrailer" allow="picture-in-picture" allowfullscreen=""
-                                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoSquareUp" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Trailer Square Up-->
-        <div class="modal fade hidden-at-start" id="videoSquareUp" tabindex="-1" aria-labelledby="video4Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoAlita" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <div class="iframe-16-9">
-                                        <iframe id="SquareUpTrailer" allow="picture-in-picture" allowfullscreen=""
-                                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoUnthrone" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Trailer Unthrone-->
-        <div class="modal fade hidden-at-start" id="videoUnthrone" tabindex="-1" aria-labelledby="video5Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoSquareUp" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <div class="iframe-16-9">
-                                        <iframe id="UnthoneTrailer" allow="picture-in-picture" allowfullscreen=""
-                                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoALBA1" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Trailer ALBA 1-->
-        <div class="modal fade hidden-at-start" id="videoALBA1" tabindex="-1" aria-labelledby="video6Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoUnthrone" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <div class="iframe-16-9">
-                                        <iframe id="ALBA1Trailer" allow="picture-in-picture" allowfullscreen=""
-                                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoALBA2" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Trailer ALBA 2-->
-        <div class="modal fade hidden-at-start" id="videoALBA2" tabindex="-1" aria-labelledby="video7Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
-                <div class="modal-content border-secondary bg-dark">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                        <div class="row mt-3">
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-prev-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoALBA1" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                            <div class="col">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <div class="iframe-16-9">
-                                        <iframe id="ALBA2Trailer" allow="picture-in-picture" allowfullscreen=""
-                                            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-auto my-auto">
-                                <button class="carousel-control-next-icon bg-dark border-0" type="button"
-                                    data-bs-target="#videoRedeye1" data-bs-toggle="modal" data-bs-dismiss="modal">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="mailto: rgsardon@gmail.com" class="text-decoration-none col-auto">
+                <img class="m-4" width="50" height="50" src="/Multimedia/Icons/envelope.svg" alt="Email">
+            </a>
         </div>
 
     </main>
+
+    <!-- Trailer Redeye Physics-->
+    <div class="modal fade hidden-at-start" id="videoRedeye1" tabindex="-1" aria-labelledby="video1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoALBA2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9 text-center">
+                                <div class="iframe-16-9 mx-auto">
+                                    <iframe id="RedEyePhysics" allow="autoplay"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoRedeye2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer Redeye Render-->
+    <div class="modal fade hidden-at-start" id="videoRedeye2" tabindex="-1" aria-labelledby="video2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoRedeye1" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9 text-center">
+                                <div class="iframe-16-9 mx-auto">
+                                    <iframe id="RedEyeRender" allow="autoplay"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoAlita" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer Alita-->
+    <div class="modal fade hidden-at-start" id="videoAlita" tabindex="-1" aria-labelledby="video3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoRedeye2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="iframe-16-9 mx-auto">
+                                    <iframe id="AlitaTrailer" allow="picture-in-picture" allowfullscreen=""
+                                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoSquareUp" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer Square Up-->
+    <div class="modal fade hidden-at-start" id="videoSquareUp" tabindex="-1" aria-labelledby="video4Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoAlita" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="iframe-16-9">
+                                    <iframe id="SquareUpTrailer" allow="picture-in-picture" allowfullscreen=""
+                                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoUnthrone" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer Unthrone-->
+    <div class="modal fade hidden-at-start" id="videoUnthrone" tabindex="-1" aria-labelledby="video5Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoSquareUp" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="iframe-16-9">
+                                    <iframe id="UnthoneTrailer" allow="picture-in-picture" allowfullscreen=""
+                                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoALBA1" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer ALBA 1-->
+    <div class="modal fade hidden-at-start" id="videoALBA1" tabindex="-1" aria-labelledby="video6Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoUnthrone" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="iframe-16-9">
+                                    <iframe id="ALBA1Trailer" allow="picture-in-picture" allowfullscreen=""
+                                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoALBA2" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer ALBA 2-->
+    <div class="modal fade hidden-at-start" id="videoALBA2" tabindex="-1" aria-labelledby="video7Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-lg-down">
+            <div class="modal-content border-secondary bg-dark">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="row mt-3">
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-prev-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoALBA1" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                        <div class="col">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="iframe-16-9">
+                                    <iframe id="ALBA2Trailer" allow="picture-in-picture" allowfullscreen=""
+                                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto my-auto">
+                            <button class="carousel-control-next-icon bg-dark border-0" type="button"
+                                data-bs-target="#videoRedeye1" data-bs-toggle="modal" data-bs-dismiss="modal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
