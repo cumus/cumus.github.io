@@ -16,6 +16,7 @@
     <!-- JQuery & Improved Modals -->
     <script type="text/javascript" src="/Source/jQuery/jquery-1.10.0.min.js" defer></script>
     <script type="text/javascript" src="/Source/optimized_modals.js" defer></script>
+    <script type="text/javascript" src="/Source/collapsing_cards2.js" defer></script>
 
     <title>My Projects</title>
 </head>
@@ -68,30 +69,25 @@
 
     <main class="container-fluid">
         <!-- Latest Projects -->
-        <h1 class="display-4 fst-bold pt-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center d-block">[ Latest
+        <h1 class="display-4 pt-1 my-2 my-md-3 my-lg-4 text-white text-center d-block">[ Latest
             Projects ]</h1>
-        <div class="row flex-row justify-content-center">
+        <div class="row mx-xl-4 mx-xxl-5 justify-content-center">
 
             <!-- Redeye -->
-            <div class="col-sm-12 col-md-6">
-                <div
-                    class="row g-0 border border-secondary rounded flex-md-row my-4 shadow-sm h-md-250 justify-content-start">
+            <div class="col-12 col-sm-11 col-md-6 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
                     <!-- Carousel Thumbnail -->
-                    <div class="col-md-12 col-xl-12">
-                        <div id="carouselRedeye" class="carousel slide bg-black" data-bs-ride="carousel">
+                    <div class="col-12 p-0">
+                        <div id="carouselRedeye" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Redeye/RedEye.png" alt="RedEye Screenshot 1"
-                                        height="400" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Redeye/redeye_main2.PNG" alt="RedEye Screenshot 2"
-                                        height="400" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Redeye/" alt="RedEye Screenshot 3" height="400"
-                                        class="d-block w-100">
-                                </div>
+                                <img src="/Multimedia/Projects/Redeye/RedEye.png" alt="RedEye Screenshot 1"
+                                    class="carousel-item active proj-cover-1" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Redeye/redeye_main2.PNG" alt="RedEye Screenshot 2"
+                                    class="carousel-item proj-cover-1" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Redeye/RedEye.png" alt="RedEye Screenshot 3"
+                                    class="carousel-item proj-cover-1" data-bs-interval="6000">
                             </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselRedeye" data-bs-slide-to="0"
@@ -103,70 +99,115 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 p-3 p-lg-4">
-                        <!-- Description -->
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                <img src="/Multimedia/Projects/Redeye/redeye_logo.png" width="40" height="40"
-                                    alt="RedEye Logo">
-                                <h3 class="mx-2 text-white d-inline">RedEye Engine</h3>
-                                <div class="row mx-auto text-muted">FEB 2018 – Ongoing</div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p1" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row mx-2 align-items-center">
+                                <img class="col-auto p-0 m-2" src="/Multimedia/Projects/Redeye/redeye_logo.png"
+                                    width="60" height="60" alt="RedEye Logo">
+                                <h2 class="col-auto text-white d-inline p-0 my-auto ms-2 me-3">RedEye Engine</h2>
                             </div>
-                            <div class="col-auto">
-                                <div class="row-cols-auto my-auto py-2 fs-5">
-                                    <div class="col m-1 badge bg-primary">Game Engine</div>
-                                    <div class="col m-1 badge bg-secondary">C++</div>
-                                </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 2</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
                             </div>
                         </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p1" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p1" class="col p-3 pt-0 pb-1 text-white-50 hidden-at-start">
+
                         <!-- Text -->
-                        <p class="text-white-50 mt-2"> Open source 3D Game Engine developed
-                            from scratch together with <a href="https://julimaco.com/">Julià Mauri</a>. Envisioned as a
-                            sandbox to test and experiment with game engine programming paradigms. We still keep comming
-                            back to build new features.</p>
+                        <p class="m-2 mb-3">Open source 3D Game Engine developed from scratch together with <a
+                                href="https://julimaco.com/">Julià Mauri</a>. Envisioned as a sandbox to test and
+                            experiment with game engine programming paradigms. We keep coming back honing and building
+                            new features in our spare time.</p>
+
+                        <!-- Contributions -->
+                        <div id="box-2-p1" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Contributions</h4>
+                            <img id="box-icon-2-p1" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-2-p1" class="hidden-at-start m-2 pt-1">
+                                <p>I’ve participated in almost every aspect of the engine as we tend to work together on
+                                    each feature. My most prominent work lies on coding:</p>
+                                <li>Deferred shading</li>
+                                <li>Dynamic AABB trees for camera culling</li>
+                                <li>Custom integrated profiler</li>
+                                <li>Particle physics</li>
+                            </div>
+                        </div>
+
+                        <!-- Challenges -->
+                        <div id="box-3-p1" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Challenges</h4>
+                            <img id="box-icon-3-p1" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-3-p1" class="hidden-at-start m-2 pt-1">
+                                <p>After learning how other engines such as Unity and Unreal managed their scenes, we
+                                    figured we had to build a solid Entity Component System (ECS) before having too many
+                                    components to handle. Large scenes started to show a performance toll.</p>
+
+                                <p><b>Solution:</b> Our use of pointers was convenient for allocations, but not for
+                                    iterating the scene’s hierarchy. We rebuilt the scene manager and added gameobject
+                                    and component managers. These store data continuously for top speed iterations every
+                                    frame with hash maps. Highly nested scenes run exponentially faster; plus, their
+                                    64-bit unique keys allow multiple users to work on the same scene as objects can’t
+                                    be identical.</p>
+                            </div>
+                        </div>
+
                         <!-- Links -->
-                        <div class="row justify-content-evenly">
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoRedeye1">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Particle Physics</div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoRedeye2">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Particle Rendering</div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://redeye-engine.es/">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <img src="/Multimedia/Icons/link_icon.svg" alt="RedEye Website"
-                                                height="30" />
-                                            <div class="text-white-50 fs-6 my-auto ">Website</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://github.com/juliamauri/RedEye-Engine">
-                                    <img src="/Multimedia/Networks/github.webp" alt="RedEye Repository" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Github</div>
-                                </a>
-                            </div>
+                        <div class="row justify-content-evenly align-items-center text-center fs-6">
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoRedeye1">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
+                                <p class="my-auto">Particle Physics</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoRedeye2">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
+                                <p class="my-auto">Particle Rendering</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2" href="https://redeye-engine.es/">
+                                <img src="/Multimedia/Icons/link_icon.svg" alt="RedEye Website" height="30" />
+                                <p class="my-auto">Website</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/juliamauri/RedEye-Engine">
+                                <img src="/Multimedia/Networks/github.webp" alt="RedEye Repository" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Alita Unbreakable Warrior -->
-            <div class="col-sm-12 col-md-6">
-                <div
-                    class="row g-0 border border-secondary rounded flex-md-row my-4 shadow-sm h-md-250 justify-content-start">
+            <div class="col-12 col-sm-11 col-md-6 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
                     <!-- Carousel Thumbnail -->
-                    <div class="col-md-12 col-xl-12">
+                    <div class="col-12 p-0">
                         <div id="carouselAlita" class="carousel slide bg-black" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <img src="/Multimedia/Projects/Alita/Alita Screenshot 1.png" alt="Alita Screenshot 1"
+                                    class="carousel-item active proj-cover-1" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Alita/Alita gif 1.gif" alt="Alita Screenshot 2"
+                                    class="carousel-item proj-cover-1" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Alita/Alita Screenshot 3.png" alt="Alita Screenshot 3"
+                                    class="carousel-item proj-contain-1" data-bs-interval="6000">
+                            </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselAlita" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -175,104 +216,126 @@
                                 <button type="button" data-bs-target="#carouselAlita" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="4000">
-                                    <img src="/Multimedia/Projects/Alita/Alita gif 1.gif" alt="Alita Screenshot 1"
-                                        height="400" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="4000">
-                                    <img src="/Multimedia/Projects/Alita/Alita Screenshot 1.png"
-                                        alt="Alita Screenshot 2" height="400" class="d-block w-100">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="4000">
-                                    <img src="/Multimedia/Projects/Alita/Alita Screenshot 3.png"
-                                        alt="Alita Screenshot 3" height="400" class="d-block w-100">
-                                </div>
-                            </div>
                         </div>
                     </div>
+
                     <!-- Description -->
-                    <div class="col-12 p-3 p-lg-4">
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                <img src="/Multimedia/Projects/Alita/Jellybit_logo.png" width="40" height="40"
-                                    alt="Jellybit Logo">
-                                <h3 class="mx-2 text-white d-inline">Alita: Unbreakable Warrior</h3>
-                                <div class="row mx-auto text-muted">JAN – JUN 2019</div>
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p2" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Projects/Alita/Jellybit_logo.png"
+                                    width="60" height="60" alt="AUW Logo">
+                                <h2 class="col-auto text-white d-inline p-0 my-auto ms-2 me-3">Alita: UW</h2>
                             </div>
-                            <div class="col-auto">
-                                <div class="row-cols-auto my-auto py-2 fs-5">
-                                    <div class="col m-1 badge bg-primary">3D</div>
-                                    <div class="col m-1 badge bg-primary">RPG</div>
-                                    <div class="col m-1 badge bg-secondary">C++</div>
-                                    <div class="col m-1 badge bg-secondary">C#</div>
-                                </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: GUI Designer</div>
+                                <div class="col-auto badge m-1">Team size: 18</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                                <div class="col-auto badge m-1 bg-gradient">C#</div>
                             </div>
                         </div>
-                        <!-- Text-->
-                        <p class="text-white-50 mt-2">Fast-paced action videogame where you play as
-                            Alita, a female cyborg, as you explore Iron City's dangerous slums and encounter enemies
-                            throughout different scenarios. The events in the game follow the story of the movie Alita:
-                            Battle Angel as you upgrade her body parts and customize combat
-                        </p>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p2" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+                    <!-- Hidden -->
+                    <div id="box-text-1-p2" class="col p-3 pt-0 pt-md-3 pt-xl-0 pb-1 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Fast-paced action video game where you play as Alita, a female cyborg, as
+                            you explore Iron City's dangerous slums. The events in the game follow the story of <a
+                                href="https://youtu.be/w7pYhpJaJW8">Alita: Battle Angel</a> as you upgrade her body
+                            parts and customise her combat style.</p>
+
+                        <!-- Contributions -->
+                        <div id="box-2-p2" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Contributions</h4>
+                            <img id="box-icon-2-p2" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-2-p2" class="hidden-at-start m-2 pt-1">
+                                <p>I was part of the designers team but I ended up programming more than anything. I was
+                                    in charge of building the HUD’s in-game panels and menus whilst supplying the combat
+                                    and character progression mechanics these were to reflect.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Challenges -->
+                        <div id="box-3-p2" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Challenges</h4>
+                            <img id="box-icon-3-p2" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-3-p2" class="hidden-at-start m-2 pt-1">
+                                <p>Our programming team developed the engine whilst the front-end team was actively
+                                    developing the game. Every couple of weeks the engine would have a new version
+                                    released with added functionalities and resources from older versions were prone to
+                                    not loading; including the canvas prefab object that contained all the UI.</p>
+
+                                <p><b>Solution:</b> At first I thought that this inconvenience was gonna only happen on
+                                    the first stages of development because of the code’s crudeness and I happily remade
+                                    the first drafts of the UI. But once this became a constant struggle, I turned to
+                                    building the UI from scripts. This approach made it harder to edit elements, but I
+                                    was able to pass it onto every other release and continue building.</p>
+                            </div>
+                        </div>
+
                         <!-- Links -->
-                        <div class="row justify-content-evenly">
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoAlita">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Trailer</div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://alitaunbreakablewarrior.github.io/">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <img src="/Multimedia/Icons/link_icon.svg" alt="AUW Website" height="30" />
-                                            <div class="text-white-50 fs-6 my-auto">Website</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none"
-                                    href="https://github.com/JellyBitStudios/JellyBitEngine">
-                                    <img src="/Multimedia/Networks/github.webp" alt="AUW Engine Repository"
-                                        height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Github</div>
-                                </a>
-                            </div>
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoAlita">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
+                                <p class="my-auto">Trailer</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://alitaunbreakablewarrior.github.io/">
+                                <img src="/Multimedia/Icons/link_icon.svg" alt="AUW Website" height="30" />
+                                <p class="my-auto">Website</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/JellyBitStudios/JellyBitEngine">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Engine</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://twitter.com/studiojellybit">
+                                <img src="/Multimedia/Networks/twitter.svg" alt="Twitter" height="30" />
+                                <p class="my-auto">Twitter</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://www.instagram.com/studiojellybit/">
+                                <img src="/Multimedia/Networks/instagram.svg" alt="Instagram" height="30" />
+                                <p class="my-auto">Instagram</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Latest Projects -->
+        <!-- Video Games -->
         <hr class="my-4">
-        <h1 class="display-4 fst-bold pt-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center d-block">[ Other
-            Projects ]</h1>
-
-        <div class="row flex-row justify-content-center">
+        <h1 class="display-4 py-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center">[ Video Games ]
+        </h1>
+        <div class="row mx-xl-4 mx-xxl-5 justify-content-center">
 
             <!-- Square Up -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div
-                    class="row g-0 border border-secondary rounded flex-md-row my-4 shadow-sm h-md-250 justify-content-start">
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
                     <!-- Carousel Thumbnail -->
-                    <div class="col-md-12 col-xl-12">
-                        <div id="carouselSquareUp" class="carousel slide bg-black text-center" data-bs-ride="carousel">
+                    <div class="col-12 p-0">
+                        <div id="carouselSquareUp" class="carousel slide bg-black" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Square Up/Screenshot1.png"
-                                        alt="SquareUp Screenshot 1" height="300">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Square Up/logo1 lit.png" alt="SquareUp Screenshot 2"
-                                        height="300" class="w-100">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Square Up/" alt="SquareUp Screenshot 3" height="300">
-                                </div>
+                                <img src="/Multimedia/Projects/Square Up/Screenshot1.png" alt="Square Up Screenshot 1"
+                                    class="carousel-item active proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Square Up/Screenshot2.png" alt="Square Up Screenshot 2"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Square Up/logo1 lit.png" alt="Square Up Screenshot 3"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
                             </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselSquareUp" data-bs-slide-to="0"
@@ -284,79 +347,108 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Description -->
-                    <div class="col-12 p-3 p-lg-4">
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                <img src="/Multimedia/Projects/Square Up/logo.png" width="50" height="40"
-                                    alt="Juicy Code Logo">
-                                <h3 class="mx-2 text-white d-inline">Square Up</h3>
-                                <div class="row mx-auto text-muted">SEP – DEC 2018</div>
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p3" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Projects/Square Up/logo.png" width="50"
+                                    height="50" alt="Square Up Logo">
+                                <h2 class="col-auto text-white d-inline p-0 ms-2 pb-1 me-5 my-auto">Square Up</h2>
                             </div>
-                            <div class="col-auto">
-                                <div class="row-cols-auto my-auto py-2 fs-5">
-                                    <div class="col m-1 badge bg-primary">Isometric</div>
-                                    <div class="col m-1 badge bg-primary">RTS</div>
-                                    <div class="col m-1 badge bg-secondary">C++</div>
-                                </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Lead, Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 5</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
                             </div>
                         </div>
-                        <!-- Text-->
-                        <p class="card-text mb-auto text-white-50 mt-2">Inspired by Age of Empires, Square Up is a
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p3" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p3" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Inspired by <a href="https://youtu.be/DTpqoUdfLEM">Age of Empires</a>,
+                            Square Up is a
                             real-time strategy base defender where the player must fight-off a planet invasion by
-                            improving base defenses and scouting for materials and reinforcements.
-                        </p>
+                            improving your base and scouting for materials and reinforcements.</p>
+
+                        <!-- Contributions -->
+                        <div id="box-2-p3" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Contributions</h4>
+                            <img id="box-icon-2-p3" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-2-p3" class="hidden-at-start m-2 pt-1">
+                                <p>As team lead I planned the workload, assigned tasks, supervised, tested and gave
+                                    feedback on development submissions. Whilst not organising the team, I worked on the
+                                    engine supplying low level behaviours and tools for designers and artists.</p>
+                            </div>
+                        </div>
+
+                        <!-- Challenges -->
+                        <div id="box-3-p3" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Challenges</h4>
+                            <img id="box-icon-3-p3" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-3-p3" class="hidden-at-start m-2 pt-1">
+                                <p>Here I was faced with my hardest challenge to date. As team lead I planned the
+                                    workload as best as I could; but, as tasks became overdue, time gained on us and the
+                                    scope had to be cut down.</p>
+
+                                <p><b>Solution:</b> We had a boss fight planned for the end of the game. As some members
+                                    left the team, we were overflowing with their tasks and no level of crunch would
+                                    have saved us. Deciding on cancelling the boss phase was the best and hardest
+                                    decision in development. The game produced, although finished, still feels like it
+                                    is missing something.</p>
+                            </div>
+                        </div>
+
                         <!-- Links -->
-                        <div class="row justify-content-evenly mt-2">
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoSquareUp">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Trailer</div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://cumus.github.io/Juicy_Code-Square_Up/">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <img src="/Multimedia/Icons/link_icon.svg" alt="Juicy Code Website"
-                                                height="30" />
-                                            <div class="text-white-50 fs-6 my-auto">Website</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://github.com/cumus/Juicy_Code-Square_Up">
-                                    <img src="/Multimedia/Networks/github.webp" alt="Square Up Repository"
-                                        height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Github</div>
-                                </a>
-                            </div>
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoSquareUp">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT" height="30" />
+                                <p class="my-auto">Trailer</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://cumus.github.io/Juicy_Code-Square_Up/">
+                                <img src="/Multimedia/Icons/link_icon.svg" alt="link" height="30" />
+                                <p class="my-auto">Website</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/cumus/Juicy_Code-Square_Up">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Unthrone -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div
-                    class="row g-0 border border-secondary rounded flex-md-row my-4 shadow-sm h-md-250 justify-content-start">
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
                     <!-- Carousel Thumbnail -->
-                    <div class="col-md-12 col-xl-12">
-                        <div id="carouselUnthrone" class="carousel slide bg-black text-center" data-bs-ride="carousel">
+                    <div class="col-12 p-0">
+                        <div id="carouselUnthrone" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Unthrone/Unthone Screenshot 1.png"
-                                        alt="Unthrone Screenshot 1" height="300">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Unthrone/Unthone Screenshot 2.png"
-                                        alt="Unthrone Screenshot 2" height="300">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/Unthrone/Title image.PNG" alt="Unthrone Screenshot 3"
-                                        height="300">
-                                </div>
+                                <img src="/Multimedia/Projects/Unthrone/Unthone Screenshot 1.png"
+                                    alt="Unthrone Screenshot 1" class="carousel-item active proj-cover-2"
+                                    data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Unthrone/Unthone Screenshot 2.png"
+                                    alt="Unthrone Screenshot 2" class="carousel-item proj-cover-2"
+                                    data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/Unthrone/Title image.PNG" alt="Unthrone Screenshot 3"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
                             </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselUnthrone" data-bs-slide-to="0"
@@ -368,83 +460,222 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Description -->
-                    <div class="col-12 p-3 p-lg-4">
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                <img src="/Multimedia/Projects/Unthrone/logo.png" width="50" height="40"
-                                    alt="Njoy Logo">
-                                <h3 class="mx-2 text-white d-inline">Unthrone</h3>
-                                <div class="row mx-auto text-muted">JAN – JUN 2018</div>
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p4" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Projects/Unthrone/logo.png" width="60"
+                                    height="40" alt="Unthrone Logo">
+                                <h2 class="col-auto text-white d-inline p-0 pb-1 ms-2 me-5 my-auto">Unthrone</h2>
                             </div>
-                            <div class="col-auto">
-                                <div class="row-cols-auto my-auto py-2 fs-5">
-                                    <div class="col m-1 badge bg-primary">3D</div>
-                                    <div class="col m-1 badge bg-primary">RPG</div>
-                                    <div class="col m-1 badge bg-secondary">C++</div>
-                                    <div class="col m-1 badge bg-secondary">C#</div>
-                                </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Designer</div>
+                                <div class="col-auto badge m-1">Team size: 32</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                                <div class="col-auto badge m-1 bg-gradient">C#</div>
                             </div>
                         </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p4" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p4" class="col px-3 py-0 text-white-50 hidden-at-start">
                         <!-- Text -->
-                        <p class="card-text mb-auto text-white-50 mt-2">Game of Thrones tribute game developed by Njoy
-                            Games using Culverin Engine. Inspired by <a href="http://www.grimrock.net/">Legend of
-                                Grimrock</a>'s first person turn-based style and grid dynamics, it features a dungeon
-                            crawler gameplay style solving puzzles and defeating enemy guards along the way onto
-                            dethroning Cercei and fighting the Mountain.
+                        <p class="m-2 mb-3">Game of Thrones tribute game developed by Njoy Games using Culverin Engine.
+                            Inspired by
+                            <a href="https://youtu.be/8oIRFSijAXA">Legend of Grimrock</a>'s first person turn-based
+                            style and grid dynamics, it features a dungeon crawler gameplay style solving puzzles and
+                            defeating enemy guards along the way onto dethroning Cersei and fighting the Mountain.
                         </p>
+                        <!-- Contributions -->
+                        <div id="box-2-p4" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Contributions</h4>
+                            <img id="box-icon-2-p4" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-2-p4" class="hidden-at-start m-2 pt-1">
+                                <p>I partook in designing the different characters, combat abilities and progression. We
+                                    drafted ideas for major characters in the rooster and how they could balance each
+                                    other out as the player moves forward based on their background in the lore.</p>
+                            </div>
+                        </div>
+
+                        <!-- Challenges -->
+                        <div id="box-3-p4" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Challenges</h4>
+                            <img id="box-icon-3-p4" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-3-p4" class="hidden-at-start m-2 pt-1">
+                                <p>Integrating lore into gameplay constrains the designing process. Using the same
+                                    characters from the show required coherency between them.</p>
+                                <p><b>Solution:</b> Although Theon, Daeneris and Jamie are an unlikely team, their
+                                    differences worked each other out in classic rpg style: ranger, mage and tank.
+                                    Keeping to the project’s scope, player experience trumps storytelling accuracy.</p>
+                            </div>
+                        </div>
+
                         <!-- Links -->
-                        <div class="row justify-content-evenly mt-2">
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoUnthrone">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Trailer</div>
-                                </a>
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoUnthrone">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
+                                <p class="my-auto">Trailer</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://project3citm.github.io/CulverinEngine-Project3/">
+                                <img src="/Multimedia/Icons/link_icon.svg" alt="Unthrone Website" height="30" />
+                                <p class="my-auto">Website</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/Project3CITM/CulverinEngine-Project3">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Engine</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://twitter.com/njoy_games">
+                                <img src="/Multimedia/Networks/twitter.svg" alt="Twitter" height="30" />
+                                <p class="my-auto">Twitter</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://www.instagram.com/njoygames/">
+                                <img src="/Multimedia/Networks/instagram.svg" alt="Instagram" height="30" />
+                                <p class="my-auto">Instagram</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://www.facebook.com/NjoyGames-2060362217554288/">
+                                <img src="/Multimedia/Networks/facebook.svg" alt="Facebook" height="30" />
+                                <p class="my-auto">Facebook</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANG -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+                    <!-- Carousel Thumbnail -->
+                    <div class="col-12 p-0">
+                        <div id="carouselPANG" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <img src="/Multimedia/Projects/PANG/BangBros Screenshot.PNG" alt="PANG Screenshot 1"
+                                    class="carousel-item active proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/PANG/BangBros Screenshot.PNG" alt="PANG Screenshot 2"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/PANG/BangBros Screenshot.PNG" alt="PANG Screenshot 3"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
                             </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none"
-                                    href="https://project3citm.github.io/CulverinEngine-Project3/">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <img src="/Multimedia/Icons/link_icon.svg" alt="Njoy Games Website"
-                                                height="30" />
-                                            <div class="text-white-50 fs-6 my-auto">Website</div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselPANG" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselPANG" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselPANG" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
                             </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none"
-                                    href="https://github.com/Project3CITM/CulverinEngine-Project3">
-                                    <img src="/Multimedia/Networks/github.webp" alt="Culverin Engine Repository"
-                                        height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Github</div>
-                                </a>
+                        </div>
+                    </div>
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p5" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Projects/PANG/logo.png" width="70"
+                                    height="35" alt="PANG Logo">
+                                <h2 class="col-auto p-0 ms-3 pb-1 text-white d-inline my-auto me-5">PANG</h2>
                             </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 4</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p5" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p5" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">This was my first video game project. The intention was to replicate <a
+                                href="https://es.wikipedia.org/wiki/Pang">PANG</a> as closely as possible. Classic
+                            arcade games usually have their sprites out in the open and today’s computers can easily run
+                            them so development wasn’t as complex as the original developers.
+                        </p>
+
+                        <!-- Contributions -->
+                        <div id="box-2-p5" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Contributions</h4>
+                            <img id="box-icon-2-p5" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-2-p5" class="hidden-at-start m-2 pt-1">
+                                <p>I was in charge of UI and rendering and later on stepped into player control and
+                                    mechanics. We decided on having balloons follow a physically-correct approach, but
+                                    the original game had tile-based physics and its behaviour ended up being more
+                                    predictable than ours.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Challenges -->
+                        <div id="box-3-p5" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Challenges</h4>
+                            <img id="box-icon-3-p5" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-3-p5" class="hidden-at-start m-2 pt-1">
+                                <p>PANG has its own typography: very distinct yet pixelated. We had the tools to load
+                                    and render text from a TTF file but there were no typographies available that were
+                                    similar enough.</p>
+
+                                <p><b>Solution:</b> The brute force solution was to crop game screenshots and produce an
+                                    alphabet sprite sheet. Turns out you can make your own typography and there are
+                                    available online free editors. Letters were very easy to replicate and even some
+                                    weren’t used in the game and we could just skip them. In a couple hours we had the
+                                    original font replicated and running on every scene.</p>
+                            </div>
+                        </div>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/The4Bros/ANGRY_PANGS">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- A Link Between Ages -->
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                <div
-                    class="row g-0 border border-secondary rounded flex-md-row my-4 shadow-sm h-md-250 justify-content-start">
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
                     <!-- Carousel Thumbnail -->
-                    <div class="col-md-12 col-xl-12">
-                        <div id="carouselALBA" class="carousel slide bg-black text-center" data-bs-ride="carousel">
+                    <div class="col-12 p-0">
+                        <div id="carouselALBA" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/ALBA/gameplay.gif" alt="ALBA Screenshot 1"
-                                        height="300">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/ALBA/screenshot 1.png" alt="ALBA Screenshot 2"
-                                        height="300" class="w-100">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="6000">
-                                    <img src="/Multimedia/Projects/ALBA/title.png" alt="ALBA Screenshot 3" height="300">
-                                </div>
+                                <img src="/Multimedia/Projects/ALBA/screenshot 1.png" alt="ALBA Screenshot 1"
+                                    class="carousel-item active proj-cover-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/ALBA/gameplay.gif" alt="ALBA Screenshot 2"
+                                    class="carousel-item proj-cover-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/ALBA/title.png" alt="ALBA Screenshot 3"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
                             </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselALBA" data-bs-slide-to="0" class="active"
@@ -456,90 +687,526 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Description -->
-                    <div class="col-12 p-3 p-lg-4">
-                        <div class="row justify-content-between">
-                            <div class="col-auto">
-                                <img src="/Multimedia/Projects/ALBA/logo.png" width="50" height="40" alt="Duck Dev Logo"
-                                    class="rounded-circle">
-                                <h3 class="mx-2 text-white d-inline">A Link Between Ages</h3>
-                                <div class="row mx-auto text-muted">FEB – JUN 2017</div>
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p6" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2 rounded-circle" src="/Multimedia/Projects/ALBA/logo.png"
+                                    width="40" height="40" alt="ALBA Logo">
+                                <h2 class="col-auto text-white d-inline p-0 pb-1 ms-3 me-5 my-auto">Link BA</h2>
                             </div>
-                            <div class="col-auto">
-                                <div class="row-cols-auto my-auto py-2 fs-5">
-                                    <div class="col m-1 badge bg-primary">2D</div>
-                                    <div class="col m-1 badge bg-primary">RPG</div>
-                                    <div class="col m-1 badge bg-secondary">C++</div>
-                                </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 6</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
                             </div>
                         </div>
-                        <!-- Text-->
-                        <p class="card-text mb-auto text-white-50 mt-2">2D RPG tribute game based on Nintendo's 1991
-                            "The Legend of Zelda: A Link to the Past". Relive the GBA experience on computer with an
-                            added twist.
-                        </p>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p6" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p6" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">2D RPG tribute game based on Nintendo's 1991 <a
+                                href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past">The Legend
+                                of Zelda: A Link to the Past</a>. Relive the GBA experience on the computer with an
+                            added twist.</p>
+
                         <!-- Links -->
-                        <div class="row justify-content-evenly mt-2">
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoALBA1">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Trailer</div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a data-bs-toggle="modal" role="button" data-bs-target="#videoALBA2">
-                                    <img src="/Multimedia/Networks/youtube.svg" alt="YT Icon" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Gameplay</div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://carcasanchez.github.io/ALinkBetweenAges/">
-                                    <div class="row">
-                                        <div class="col-auto">
-                                            <img src="/Multimedia/Icons/link_icon.svg" alt="Game Website" height="30" />
-                                            <div class="text-white-50 fs-6 my-auto">Website</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-auto text-center my-1">
-                                <a class="text-decoration-none" href="https://github.com/carcasanchez/ALinkBetweenAges">
-                                    <img src="/Multimedia/Networks/github.webp" alt="Repository" height="30" />
-                                    <div class="text-white-50 fs-6 my-auto">Github</div>
-                                </a>
-                            </div>
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoALBA1">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT" height="30" />
+                                <p class="my-auto">Trailer</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2" data-bs-toggle="modal"
+                                role="button" data-bs-target="#videoALBA2">
+                                <img src="/Multimedia/Networks/youtube.svg" alt="YT" height="30" />
+                                <p class="my-auto">Gameplay</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://carcasanchez.github.io/ALinkBetweenAges/">
+                                <img src="/Multimedia/Icons/link_icon.svg" alt="link" height="30" />
+                                <p class="my-auto">Website</p>
+                            </a>
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/carcasanchez/ALinkBetweenAges">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Diablo Devil Reborn -->
-            <!-- Ausias Grand Prix -->
-            <!-- Pinball ED -->
-            <!-- PANG -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
 
+                    <!-- Thumbnail -->
+                    <div class="col-12 p-0 bg-black">
+                        <img src="/Multimedia/Projects/Diablo/menu screenshot.png" alt="Menu Screenshot"
+                            class="proj-cover-2 w-100">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p7" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2 rounded-circle"
+                                    src="/Multimedia/Projects/Diablo/diablo_logo.png" width="40" height="40"
+                                    alt="Diablo Logo">
+                                <h2 class="col-auto text-white d-inline p-0 ps-2 pb-1 pe-5 my-auto">Diablo DR</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 6</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p7" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p7" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">A take on Blizzard’s <a href="https://youtu.be/o_Kr5i5F43U">Diablo</a>
+                            scoped to just the first dungeon. The main goal was applying a new mechanic to the original
+                            game. The amount of layers the original game turned out having made development arise a new
+                            design decisions every other meeting.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/CapitanLiteral/FinalDiablo">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Projects -->
+        <hr class="my-4">
+        <h1 class="display-4 pt-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center">[ Other Projects ]</h1>
+        <div class="row mx-xl-4 mx-xxl-5 justify-content-center">
+
+            <!-- Portfolio -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Thumbnail -->
+                    <div class="col-12 p-0 bg-black">
+                        <img src="/Multimedia/Projects/Web Portfolio/HomeScreen.PNG" alt="Home Page"
+                            class="proj-cover-2 w-100">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p8" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/html.svg" height="40"
+                                    width="40" alt="HTML Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-3 pb-1 pe-5 my-auto">Web Portfolio</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 1</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p8" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p8" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">After having built so many different projects I needed a place to showcase
+                            them. I settled on making my own website to:
+                        <div class="ms-2">
+                            <li>Have no monetary cost.</li>
+                            <li>Have it be cross-platform to share with anyone.</li>
+                            <li>Be unique and customise it anyway I see fit.</li>
+                            <li>Explore and practice HTML, CSS and JS.</li>
+                        </div>
+                        </p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/cumus/cumus.github.io">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ausias GP -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Thumbnail -->
+                    <div class="col-12 p-0 bg-black">
+                        <img src="/Multimedia/Projects/Ausias Grand Prix/Ausias Grand Prix Screenshot.png"
+                            alt="Menu Screenshot" class="proj-cover-2 w-100">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p9" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/bullet_crop.webp" width="84"
+                                    height="30" alt="Bullet Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-2 pb-1 pe-5 my-auto">Ausias GP</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 2</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p9" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p9" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Kart circuit in a physics simulation using Bullet’s rigid bodies and vehicle
+                            mechanics.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/The4Bros/Ausias-Grand-Prix">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pinball ED -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Thumbnail -->
+                    <div class="col-12 p-0 bg-black">
+                        <img src="/Multimedia/Projects/Pinball ED/Pinball ED Screenshot.png" alt="Menu Screenshot"
+                            class="proj-contain-2 w-100">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p10" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/box2d_crop.webp" height="40"
+                                    width="40" alt="Bullet Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-2 pb-1 pe-5 my-auto">Pinball ED</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 2</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p10" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p10" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Single-level pinball physics simulation using Box2D.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/The4Bros/Pinball_Extreme_Deluxe">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SISIMEX -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Carousel Thumbnail -->
+                    <div class="col-12 p-0">
+                        <div id="carouselSISIMEX" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <img src="/Multimedia/Projects/SISIMEX/NodeCluster.PNG" alt="SISIMEX Screenshot 1"
+                                    class="carousel-item active proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/SISIMEX/YellowPages.PNG" alt="SISIMEX Screenshot 2"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
+                                <video autoplay loop class="carousel-item proj-contain-2" data-bs-interval="6000">
+                                    <source src="/Multimedia/Projects/SISIMEX/demo.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselSISIMEX" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselSISIMEX" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselSISIMEX" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p11" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/tcp.webp" height="40"
+                                    width="40" alt="Bullet Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-3 pb-1 pe-5 my-auto">Agent Distribution
+                                </h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 1</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p11" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p11" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Network support system based on searching multilateral exchanges through
+                            socketed agents. My take sets random positions for its users and when iterating, it
+                            prioritises trades where goods travel the least possible cumulative distance.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/cumus/SISIMEX-agent-distribution">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Qt Model Viewer -->
-            <!-- Portfolio Website -->
-            <!-- SISIMEX -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
 
+                    <!-- Carousel Thumbnail -->
+                    <div class="col-12 p-0">
+                        <div id="carouselQtMV" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <img src="/Multimedia/Projects/3D Model Viewer/screenshot.png" alt="Screenshot"
+                                    class="carousel-item active proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/3D Model Viewer/refraction.png" alt="Refraction"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/3D Model Viewer/reflection.png" alt="Reflection"
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselQtMV" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselQtMV" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselQtMV" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p12" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/qt.svg" height="40" width="40"
+                                    alt="Bullet Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-3 pb-1 pe-5 my-auto">Model Viewer</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 2</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p12" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p12" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Second iteration on Qt where we turned the 2D painter into a 3D renderer
+                            using no libraries other than Assimp to import the models. Once we could import models, we
+                            added advanced rendering paradigms with Qt’s OpenGL functions: skybox, deferred shading and
+                            material’s reflection and refraction.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/cumus/QT-3D-Model-Viewer">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qt 2D Painter -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Thumbnail -->
+                    <div class="col-12 p-0 bg-black">
+                        <img src="/Multimedia/Projects/2D Painter/screenshot.png" alt="Menu Screenshot"
+                            class="proj-contain-2 w-100">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p13" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/qt.svg" height="40" width="40"
+                                    alt="Bullet Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-3 pb-1 pe-5 my-auto">2D Painter</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 1</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p13" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p13" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">My first completely cross-platform project made with Qt. It emulates a 2d
+                            engine where the user can create and customise shapes on a canvas and output the composition
+                            into a png file.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/dibu13/Qt-2D-Painter">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- Contact -->
-        <div class="row align-items-center justify-content-center text-white my-5">
-            <a href="https://github.com/cumus/" class="text-decoration-none col-auto">
-                <img class="m-4" width="50" height="50" src="/Multimedia/Networks/github.webp" alt="Github">
-            </a>
+        <!-- Icons -->
+        <hr>
+        <footer class="row align-content-center justify-content-center gx-3 my-4">
+            <div class="col-auto mx-3">
+                <a id="Github" href="https://github.com/cumus/" class="btn" data-toggle="tooltip"
+                    data-placement="bottom" title="Github profile">
+                    <img src="/Multimedia/Networks/github.webp" width="40" height="40" alt="My Github">
+                </a>
+            </div>
+            <div class="col-auto mx-3">
+                <a id="LinkedIn" href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/" class="btn"
+                    data-toggle="tooltip" data-placement="bottom" title="LinkedIn profile">
+                    <img src="/Multimedia/Networks/linkedin.svg" width="40" height="40" alt="My LinkedIn">
+                </a>
+            </div>
+            <div class="col-auto mx-3">
+                <a id="CV" href="/CV/CV_RubenSardon.pdf" class="btn" data-toggle="tooltip" data-placement="bottom"
+                    title="CV as pdf">
+                    <img src="/Multimedia/Icons/CV.svg" width="40" height="40" alt="View CV">
+                </a>
+            </div>
+            <div class="col-auto mx-3 my-auto">
+                <a id="email" href="mailto: rgsardon@gmail.com">
+                    <img src="/Multimedia/Icons/envelope.svg" width="40" height="40" alt="Email">
+                </a>
+            </div>
+            <div class="col-12 text-center text-primary my-auto pt-3">
+                <p>Authored by Rubén Sardón</p>
+            </div>
 
-            <a href="https://www.linkedin.com/in/ruben-sardon-9b0200a4/" class="col-auto">
-                <img class="m-4" width="50" height="50" src="/Multimedia/Networks/linkedin.svg" alt="LinkedIn">
-            </a>
-
-            <a href="mailto: rgsardon@gmail.com" class="text-decoration-none col-auto">
-                <img class="m-4" width="50" height="50" src="/Multimedia/Icons/envelope.svg" alt="Email">
-            </a>
-        </div>
+        </footer>
 
     </main>
 
