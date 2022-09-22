@@ -2,9 +2,11 @@
 body {
     background-color: #0D0D0D;
 }
+
 .navbar {
     background-color: #202529
 }
+
 .bg-skill {
     background-color: #646464;
 }
@@ -22,6 +24,7 @@ body {
 .hidden-at-start {
     display: none;
 }
+
 .invisible-at-start {
     opacity: 0;
 }
@@ -32,16 +35,19 @@ body {
     height: 45vh;
     object-fit: cover;
 }
+
 .proj-contain-1 {
     min-width: 40vw;
     height: 45vh;
     object-fit: contain;
 }
+
 .proj-cover-2 {
     min-width: 27vw;
     height: 25vh;
     object-fit: cover;
 }
+
 .proj-contain-2 {
     min-width: 27vw;
     height: 25vh;
@@ -57,10 +63,29 @@ body {
     overflow: hidden;
     width: 100%;
 }
+
 .iframe-16-9 iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #646464;
+    height: 5vh;
+}
+
+::-webkit-scrollbar-track {
+    background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(54, 54, 54);
 }
