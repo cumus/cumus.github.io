@@ -101,17 +101,17 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p1" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
-                    <div id="box-text-1-p1" class="col p-3 pt-0 pb-1 text-white-50 hidden-at-start">
+                    <div id="box-text-1-p1" class="col py-3 pt-0 pb-1 text-white-50 hidden-at-start">
 
                         <!-- Text -->
                         <p class="m-2 mb-3">Open source 3D Game Engine developed from scratch together with <a
                                 href="https://julimaco.com/">Julià Mauri</a>. Envisioned as a sandbox to test and
                             experiment with game engine programming paradigms. We keep coming back honing and building
-                            new features in our spare time.</p>
+                            new features in our spare time. All my Saturdays are spent coding the engine.</p>
 
                         <!-- Contributions -->
                         <div id="box-2-p1" class="card-header rounded position-relative m-2 bg-dark">
@@ -119,7 +119,7 @@
                             <img id="box-icon-2-p1" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
                                 height="40" class="position-absolute top-0 end-0">
                             <div id="box-text-2-p1" class="hidden-at-start m-2 pt-1">
-                                <p>I’ve participated in almost every aspect of the engine as we tend to work together on
+                                <p>I’ve partaken in almost every aspect of the engine as we tend to work together on
                                     each feature. My most prominent work lies on coding:</p>
                                 <li>Deferred shading</li>
                                 <li>Dynamic AABB trees for camera culling</li>
@@ -135,15 +135,17 @@
                                 height="40" class="position-absolute top-0 end-0">
                             <div id="box-text-3-p1" class="hidden-at-start m-2 pt-1">
                                 <p>After learning how other engines such as Unity and Unreal managed their scenes, we
-                                    figured we had to build a solid Entity Component System (ECS) before having too many
-                                    components to handle. Large scenes started to show a performance toll.</p>
+                                    figured we had to build a solid Entity Component System (ECS) approach before having
+                                    too many components to handle. Large scenes started to show a performance toll.</p>
 
                                 <p><b>Solution:</b> Our use of pointers was convenient for allocations, but not for
                                     iterating the scene’s hierarchy. We rebuilt the scene manager and added gameobject
                                     and component managers. These store data continuously for top speed iterations every
                                     frame with hash maps. Highly nested scenes run exponentially faster; plus, their
                                     64-bit unique keys allow multiple users to work on the same scene as objects can’t
-                                    be identical.</p>
+                                    be identical. We are still working on our ECS implementation though as it's still
+                                    not quite there yet. We are aiming at thread-safe systems before implementing a
+                                    multi-threading module and running each system independently.</p>
                             </div>
                         </div>
 
@@ -173,8 +175,117 @@
                 </div>
             </div>
 
-            <!-- Alita Unbreakable Warrior -->
+            <!-- ¿Qui és l'Esquerda? -->
             <div class="col-12 col-sm-11 col-md-6 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Carousel Thumbnail -->
+                    <div class="col-12 p-0">
+                        <div id="carouselQELE" class="carousel slide bg-black top-50 translate-middle-y"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <img src="/Multimedia/Projects/QELE/Intro_Credits.png" alt="QELE Screenshot 1"
+                                    class="carousel-item active proj-contain-1" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/QELE/.png" alt="QELE Screenshot 2"
+                                    class="carousel-item proj-cover-1" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/QELE/.png" alt="QELE Screenshot 3"
+                                    class="carousel-item proj-cover-1" data-bs-interval="6000">
+                            </div>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselQELE" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselQELE" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselQELE" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p14" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row mx-2 align-items-center">
+                                <img class="col-auto p-0 m-2" src="/Multimedia/Projects/QELE/app_icon.png" width="60"
+                                    height="60" alt="RedEye Logo">
+                                <h2 class="col-auto text-white d-inline p-0 my-auto ms-2 me-3">¿Qui és l'Esquerda?</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 2</div>
+                                <div class="col-auto badge m-1 bg-gradient">Unity</div>
+                                <div class="col-auto badge m-1 bg-gradient">C#</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p14" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0 no-click">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p14" class="col py-3 pt-1 pb-1 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Gymkhana-type app that uses a mobile device's geolocation services to make
+                            players delve into Esquerda's Archaeological Site whilst facing a range of mini-games spread
+                            throughout assaying their adquired historical knowledge after having explored the museum's
+                            exhibits and artifacts.</p>
+
+                        <!-- Contributions -->
+                        <div id="box-2-p14" class="card-header rounded position-relative m-2 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Contributions</h4>
+                            <img id="box-icon-2-p14" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-2-p14" class="hidden-at-start m-2 pt-1">
+                                <p>The game is based on a previous version for Ter's Museum; completly re-built to have
+                                    no dependencies to any Assets from Unity's Asset Store and support both deployments
+                                    simultaneously on a single project.
+
+                                    Furthermore, the previous version ran without internet connection. I built its
+                                    database and programmed playthough uploads allowing player rankings and set content
+                                    to be database-backed easing future updates and changes without having to re-install
+                                    the app on each device.</p>
+                            </div>
+                        </div>
+
+                        <!-- Challenges -->
+                        <div id="box-3-p14" class="card-header rounded position-relative m-2 mb-3 bg-dark">
+                            <h4 class="text-white mb-0 ms-2">Challenges</h4>
+                            <img id="box-icon-3-p14" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
+                                height="40" class="position-absolute top-0 end-0">
+                            <div id="box-text-3-p14" class="hidden-at-start m-2 pt-1">
+                                <p>I anticipated dealing with Unity's quirks to be the main source of my headackes. They
+                                    ended up being more than expected, but by far the most tedious portion of the
+                                    workload was testing. Behaviours changed from running on a computer to running on a
+                                    mobile device constantly. Anything running steadily wilst testing on PC might
+                                    unnexpectedly cause trouble when changing platform and some features would only run
+                                    on a mobile device such as geolocation.</p>
+
+                                <p><b>Solution:</b> The previous version had little to no debugging functionalities.
+                                    Testing the different parts of the game required restarting it constantly. Adding
+                                    tools to navigate through the game had the most impact on saving time; plus, having
+                                    parts be accessible through these hidden passages forced them to become more
+                                    independent from the gameloop and therefore more robust.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Games -->
+        <hr class="my-4">
+        <h1 class="display-4 py-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center">[ Video Games ]
+        </h1>
+        <div class="row mx-xl-4 mx-xxl-5 justify-content-center">
+
+            <!-- Alita Unbreakable Warrior -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
                 <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
 
                     <!-- Carousel Thumbnail -->
@@ -182,11 +293,11 @@
                         <div id="carouselAlita" class="carousel slide bg-black" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <img src="/Multimedia/Projects/Alita/Alita Screenshot 2.png" alt="Alita Screenshot 1"
-                                    class="carousel-item active proj-cover-1" data-bs-interval="6000">
+                                    class="carousel-item active proj-contain-2" data-bs-interval="6000">
                                 <img src="/Multimedia/Projects/Alita/Alita gif 1.gif" alt="Alita Screenshot 2"
-                                    class="carousel-item proj-cover-1" data-bs-interval="6000">
+                                    class="carousel-item proj-cover-2" data-bs-interval="6000">
                                 <img src="/Multimedia/Projects/Alita/Alita Screenshot 4.png" alt="Alita Screenshot 3"
-                                    class="carousel-item proj-contain-1" data-bs-interval="6000">
+                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
                             </div>
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselAlita" data-bs-slide-to="0"
@@ -212,7 +323,7 @@
 
                             <!-- Tags -->
                             <div class="row mx-2 mb-2 p-0 font-monospace">
-                                <div class="col-auto badge m-1">Role: GUI Designer</div>
+                                <div class="col-auto badge m-1">Role: UI Programmer</div>
                                 <div class="col-auto badge m-1">Team size: 18</div>
                                 <div class="col-auto badge m-1 bg-gradient">C++</div>
                                 <div class="col-auto badge m-1 bg-gradient">C#</div>
@@ -221,7 +332,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p2" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
                     <!-- Hidden -->
                     <div id="box-text-1-p2" class="col p-3 pt-0 pt-md-3 pt-xl-0 pb-1 text-white-50 hidden-at-start">
@@ -295,13 +406,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Video Games -->
-        <hr class="my-4">
-        <h1 class="display-4 py-1 my-2 my-sm-2 my-md-3 my-lg-4 text-white text-center">[ Video Games ]
-        </h1>
-        <div class="row mx-xl-4 mx-xxl-5 justify-content-center">
 
             <!-- Square Up -->
             <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
@@ -349,7 +453,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p3" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -357,9 +461,8 @@
 
                         <!-- Text -->
                         <p class="m-2 mb-3">Inspired by <a href="https://youtu.be/DTpqoUdfLEM">Age of Empires</a>,
-                            Square Up is a
-                            real-time strategy base defender where the player must fight-off a planet invasion by
-                            improving your base and scouting for materials and reinforcements.</p>
+                            Square Up is a real-time strategy base defender where the player must fight-off a planet
+                            invasion by improving their base and scouting the map for materials and reinforcements.</p>
 
                         <!-- Contributions -->
                         <div id="box-2-p3" class="card-header rounded position-relative m-2 bg-dark">
@@ -369,7 +472,8 @@
                             <div id="box-text-2-p3" class="hidden-at-start m-2 pt-1">
                                 <p>As team lead I planned the workload, assigned tasks, supervised, tested and gave
                                     feedback on development submissions. Whilst not organising the team, I worked on the
-                                    engine supplying low level behaviours and tools for designers and artists.</p>
+                                    engine supplying low level behaviours and the in-engine tools used by the designers
+                                    and artists.</p>
                             </div>
                         </div>
 
@@ -463,7 +567,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p4" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -481,9 +585,10 @@
                             <img id="box-icon-2-p4" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="40"
                                 height="40" class="position-absolute top-0 end-0">
                             <div id="box-text-2-p4" class="hidden-at-start m-2 pt-1">
-                                <p>I partook in designing the different characters, combat abilities and progression. We
-                                    drafted ideas for major characters in the rooster and how they could balance each
-                                    other out as the player moves forward based on their background in the lore.</p>
+                                <p>I partook in designing the different characters, their combat abilities and
+                                    progression. We drafted ideas for major characters in the rooster and how they could
+                                    balance each other out as the player moves forward based on their background in the
+                                    lore.</p>
                             </div>
                         </div>
 
@@ -548,8 +653,9 @@
                             <div class="carousel-inner">
                                 <img src="/Multimedia/Projects/PANG/BangBros Screenshot.PNG" alt="PANG Screenshot 1"
                                     class="carousel-item active proj-contain-2" data-bs-interval="6000">
-                                <img src="/Multimedia/Projects/PANG/9809da4ef910b13f9c9cd9d324c05d83.gif" alt="PANG Screenshot 2"
-                                    class="carousel-item proj-contain-2" data-bs-interval="6000">
+                                <img src="/Multimedia/Projects/PANG/9809da4ef910b13f9c9cd9d324c05d83.gif"
+                                    alt="PANG Screenshot 2" class="carousel-item proj-contain-2"
+                                    data-bs-interval="6000">
                                 <img src="/Multimedia/Projects/PANG/BangBros Screenshot2.PNG" alt="PANG Screenshot 3"
                                     class="carousel-item proj-contain-2" data-bs-interval="6000">
                             </div>
@@ -584,17 +690,17 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p5" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
                     <div id="box-text-1-p5" class="col px-3 py-0 text-white-50 hidden-at-start">
 
                         <!-- Text -->
-                        <p class="m-2 mb-3">This was my first video game project. The intention was to replicate <a
+                        <p class="m-2 mb-3">My first complete video game emulation project. The aim was to replicate <a
                                 href="https://es.wikipedia.org/wiki/Pang">PANG</a> as closely as possible. Classic
                             arcade games usually have their sprites out in the open and today’s computers can easily run
-                            them so development wasn’t as complex as the original developers.
+                            them so development wasn’t as complex as the original developers' had it.
                         </p>
 
                         <!-- Contributions -->
@@ -689,7 +795,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p6" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -698,7 +804,7 @@
                         <!-- Text -->
                         <p class="m-2 mb-3">2D RPG tribute game based on Nintendo's 1991 <a
                                 href="https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past">The Legend
-                                of Zelda: A Link to the Past</a>. Relive the GBA experience on the computer with an
+                                of Zelda: A Link to the Past</a>. Relive the GBA experience on a computer with an
                             added twist.</p>
 
                         <!-- Links -->
@@ -750,7 +856,6 @@
                         </div>
                     </div>
 
-
                     <!-- Description -->
                     <div class="col-12 position-relative">
                         <div id="box-1-p7" class="w-100 h-100 p-0">
@@ -773,7 +878,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p7" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -789,6 +894,58 @@
                         <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
                             <a class="col-auto text-decoration-none text-white-50 m-2"
                                 href="https://github.com/CapitanLiteral/FinalDiablo">
+                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
+                                <p class="my-auto">Github</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pinball ED -->
+            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
+                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
+
+                    <!-- Thumbnail -->
+                    <div class="col-12 p-0 bg-black">
+                        <img src="/Multimedia/Projects/Pinball ED/Pinball ED Screenshot.png" alt="Menu Screenshot"
+                            class="proj-contain-2 w-100">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="col-12 position-relative">
+                        <div id="box-1-p10" class="w-100 h-100 p-0">
+
+                            <!-- Title -->
+                            <div class="row p-3 pb-1 align-items-center">
+                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/box2d_crop.webp" height="40"
+                                    width="40" alt="Bullet Logo" class="my-auto">
+                                <h2 class="col-auto text-white d-inline p-0 ps-2 pb-1 pe-5 my-auto">Pinball ED</h2>
+                            </div>
+
+                            <!-- Tags -->
+                            <div class="row mx-2 mb-2 p-0 font-monospace">
+                                <div class="col-auto badge m-1">Role: Programmer</div>
+                                <div class="col-auto badge m-1">Team size: 2</div>
+                                <div class="col-auto badge m-1 bg-gradient">C++</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapse icon -->
+                        <img id="box-icon-1-p10" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
+                            class="position-absolute top-0 end-0 no-click">
+                    </div>
+
+                    <!-- Hidden -->
+                    <div id="box-text-1-p10" class="col px-3 py-0 text-white-50 hidden-at-start">
+
+                        <!-- Text -->
+                        <p class="m-2 mb-3">Single-level pinball physics simulation using Box2D.</p>
+
+                        <!-- Links -->
+                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
+                            <a class="col-auto text-decoration-none text-white-50 m-2"
+                                href="https://github.com/The4Bros/Pinball_Extreme_Deluxe">
                                 <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
                                 <p class="my-auto">Github</p>
                             </a>
@@ -834,20 +991,20 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p8" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
                     <div id="box-text-1-p8" class="col px-3 py-0 text-white-50 hidden-at-start">
 
                         <!-- Text -->
-                        <p class="m-2 mb-3">After having built so many different projects I needed a place to showcase
-                            them. I settled on making my own website to:
+                        <p class="m-2 mb-3">After having building different projects I needed a place to showcase
+                            them and settled on making my own website from scratch to:
                         <div class="ms-2">
-                            <li>Have no monetary cost.</li>
-                            <li>Have it be cross-platform to share with anyone.</li>
-                            <li>Be unique and customise it anyway I see fit.</li>
-                            <li>Explore and practice HTML, CSS and JS.</li>
+                            <li>Explore, understand and practice web development with HTML, CSS and JS.</li>
+                            <li>Deal with cross-platforming and share it everywhere.</li>
+                            <li>Have it be unique and customizable anyway I see fit.</li>
+                            <li>Incur in no monetary cost past the domain acquisition.</li>
                         </div>
                         </p>
 
@@ -894,72 +1051,20 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p9" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
                     <div id="box-text-1-p9" class="col px-3 py-0 text-white-50 hidden-at-start">
 
                         <!-- Text -->
-                        <p class="m-2 mb-3">Kart circuit in a physics simulation using Bullet’s rigid bodies and vehicle
-                            mechanics.</p>
+                        <p class="m-2 mb-3">Kart minigame circuit in a physics simulation using Bullet’s rigid body and
+                            vehicle mechanics.</p>
 
                         <!-- Links -->
                         <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
                             <a class="col-auto text-decoration-none text-white-50 m-2"
                                 href="https://github.com/The4Bros/Ausias-Grand-Prix">
-                                <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
-                                <p class="my-auto">Github</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pinball ED -->
-            <div class="col-12 col-sm-6 col-md-4 p-0 p-sm-1 p-md-2 px-xl-3 px-xxl-4">
-                <div class="row border border-secondary rounded m-1 p-0 bg-gradient">
-
-                    <!-- Thumbnail -->
-                    <div class="col-12 p-0 bg-black">
-                        <img src="/Multimedia/Projects/Pinball ED/Pinball ED Screenshot.png" alt="Menu Screenshot"
-                            class="proj-contain-2 w-100">
-                    </div>
-
-                    <!-- Description -->
-                    <div class="col-12 position-relative">
-                        <div id="box-1-p10" class="w-100 h-100 p-0">
-
-                            <!-- Title -->
-                            <div class="row p-3 pb-1 align-items-center">
-                                <img class="col-auto p-0 ms-2" src="/Multimedia/Softwares/box2d_crop.webp" height="40"
-                                    width="40" alt="Bullet Logo" class="my-auto">
-                                <h2 class="col-auto text-white d-inline p-0 ps-2 pb-1 pe-5 my-auto">Pinball ED</h2>
-                            </div>
-
-                            <!-- Tags -->
-                            <div class="row mx-2 mb-2 p-0 font-monospace">
-                                <div class="col-auto badge m-1">Role: Programmer</div>
-                                <div class="col-auto badge m-1">Team size: 2</div>
-                                <div class="col-auto badge m-1 bg-gradient">C++</div>
-                            </div>
-                        </div>
-
-                        <!-- Collapse icon -->
-                        <img id="box-icon-1-p10" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
-                    </div>
-
-                    <!-- Hidden -->
-                    <div id="box-text-1-p10" class="col px-3 py-0 text-white-50 hidden-at-start">
-
-                        <!-- Text -->
-                        <p class="m-2 mb-3">Single-level pinball physics simulation using Box2D.</p>
-
-                        <!-- Links -->
-                        <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
-                            <a class="col-auto text-decoration-none text-white-50 m-2"
-                                href="https://github.com/The4Bros/Pinball_Extreme_Deluxe">
                                 <img src="/Multimedia/Networks/github.webp" alt="Github" height="30" />
                                 <p class="my-auto">Github</p>
                             </a>
@@ -1019,7 +1124,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p11" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -1090,7 +1195,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p12" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -1098,9 +1203,16 @@
 
                         <!-- Text -->
                         <p class="m-2 mb-3">Second iteration on Qt where we turned the 2D painter into a 3D renderer
-                            using no libraries other than Assimp to import the models. Once we could import models, we
-                            added advanced rendering paradigms with Qt’s OpenGL functions: skybox, deferred shading and
-                            material’s reflection and refraction.</p>
+                            using no libraries other than <a href="https://assimp.org/">Assimp</a> to import the models.
+                            Once we could import models, we added advanced rendering paradigms with Qt’s OpenGL
+                            functions: skybox, deferred shading and material’s reflection and refraction.</p>
+                        <p class="m-2 mb-3">This remains my most starred repository on github as Qt has tools ready for
+                            <a href="https://doc.qt.io/qt-6/quick3d-vertex-skinning.html">Vertex Skinning</a>, but the
+                            scenes must be parsed into QML code using Qt's <a
+                                href="https://doc.qt.io/qt-6/qtquick3d-tool-balsam.html">Balsam Asset Import Tool</a>. I
+                            prefer adding raw C++ functionality to the imported assimp scene rather than having to
+                            deal with QML.
+                        </p>
 
                         <!-- Links -->
                         <div class="row justify-content-evenly align-items-center text-center fs-6 mx-2">
@@ -1145,7 +1257,7 @@
 
                         <!-- Collapse icon -->
                         <img id="box-icon-1-p13" src="/Multimedia/Icons/keyboard-down-arrow.svg" width="60" height="60"
-                            class="position-absolute top-0 end-0">
+                            class="position-absolute top-0 end-0 no-click">
                     </div>
 
                     <!-- Hidden -->
@@ -1153,7 +1265,7 @@
 
                         <!-- Text -->
                         <p class="m-2 mb-3">My first completely cross-platform project made with Qt. It emulates a 2d
-                            engine where the user can create and customise shapes on a canvas and output the composition
+                            engine where the user can create and customise shapes on a canvas and export the composition
                             into a png file.</p>
 
                         <!-- Links -->
@@ -1185,8 +1297,8 @@
                 </a>
             </div>
             <div class="col-auto mx-3">
-                <a id="CV" href="/Multimedia/Docs/CV_RubenSardon.pdf" class="btn" data-toggle="tooltip" data-placement="bottom"
-                    title="CV as pdf">
+                <a id="CV" href="/Multimedia/Docs/CV_RubenSardon.pdf" class="btn" data-toggle="tooltip"
+                    data-placement="bottom" title="CV as pdf">
                     <img src="/Multimedia/Icons/CV.svg" width="40" height="40" alt="View CV">
                 </a>
             </div>

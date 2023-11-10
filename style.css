@@ -16,10 +16,6 @@ body {
     height: 100vh;
 }
 
-.rotated-90 {
-    transform: rotate(-90deg);
-}
-
 /* Hide content through opacity */
 .hidden-at-start {
     display: none;
@@ -88,4 +84,13 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(54, 54, 54);
+}
+
+/* Other Utility */
+.rotated-90 {
+    transform: rotate(-90deg);
+}
+
+.no-click{
+    pointer-events: none;
 }

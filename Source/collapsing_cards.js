@@ -1,19 +1,15 @@
-// Custom collapsing cards interaction with jQuery
+// Custom collapsing cards interaction - AboutMe
 
-var is_visible = [false, false, false];
+const card_count = 3;
+const time_step = 600;
 
-$("#box-1").click(function () {
-    $("#box-text-1").slideToggle(600);
-    if (is_visible[0] = !is_visible[0]) $("#box-icon-1").css("transform", "rotate(180deg)");
-    else $("#box-icon-1").css("transform", "rotate(0deg)");
-});
-$("#box-2").click(function () {
-    $("#box-text-2").slideToggle(600);
-    if (is_visible[1] = !is_visible[1]) $("#box-icon-2").css("transform", "rotate(180deg)");
-    else $("#box-icon-2").css("transform", "rotate(0deg)");
-});
-$("#box-3").click(function () {
-    $("#box-text-3").slideToggle(600);
-    if (is_visible[2] = !is_visible[2]) $("#box-icon-3").css("transform", "rotate(180deg)");
-    else $("#box-icon-3").css("transform", "rotate(0deg)");
-});
+// Icon rotation toggle
+const is_visible = [];
+for (let i = 1; i <= card_count; i++) {
+    is_visible[i - 1] = false;
+    $("#box-" + i).click(function () {
+        $("#box-text-" + i).slideToggle(time_step);
+        if (is_visible[i - 1] = !is_visible[i - 1]) $("#box-icon-" + i).css("transform", "rotate(180deg)");
+        else $("#box-icon-" + i).css("transform", "rotate(0deg)");
+    });
+}

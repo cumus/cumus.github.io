@@ -1,5 +1,5 @@
-// Set video src only when opening modals using jQuery
-
+// Setting modals' video src only when opened
+// Setting them in body causes page to lag until all media is loaded
 $("#videoRedeye1").on('hide.bs.modal', function () { $("#RedEyePhysics").attr('src', '') });
 $("#videoRedeye1").on('shown.bs.modal', function () { $("#RedEyePhysics").attr('src', "https://drive.google.com/file/d/1eN2R-Palm3ZxZ9y6k3bgsn4xEUVx_eO7/preview") });
 $("#videoRedeye2").on('hide.bs.modal', function () { $("#RedEyeRender").attr('src', '') });
