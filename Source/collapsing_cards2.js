@@ -1,6 +1,6 @@
 // Custom collapsing cards interaction - Projects
 
-const card_count = 14;
+const card_count = 15;
 const time_step = 500;
 
 // Icon rotation toggle

@@ -11,6 +11,14 @@ body {
     background-color: #646464;
 }
 
+.bg-proj {
+    background-color: rgba(6, 18, 87, 0.253);
+}
+
+.bg-redeye {
+    background-color: rgba(90, 0, 0, 0.137);
+}
+
 /* Home page vertical span */
 .screen-wrapper {
     height: 100vh;
