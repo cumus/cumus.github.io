@@ -1,6 +1,6 @@
 // Custom collapsing cards interaction - AboutMe
 
-const card_count = 4;
+const card_count = 5;
 const time_step = 600;
 
 // Icon rotation toggle
